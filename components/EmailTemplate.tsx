@@ -24,7 +24,7 @@ import {
     subject?: string;
   }
   
-  const baseUrl = `https://${process.env.URL}`;
+  const baseUrl = `https://${process.env.NEXT_PUBLIC_URL}`;
   
   const PropDefaults: NetlifyWelcomeEmailProps = {
     name: '',
@@ -67,7 +67,7 @@ import {
               src={`${baseUrl}/gsdognh_logo.png`}
               width="200"
               height="200"
-              alt={process.env.BRAND}
+              alt={process.env.NEXT_PUBLIC_BRAND}
               className="mx-auto my-20 rounded-full"
             />
             <Container className="bg-white p-45">
@@ -88,7 +88,7 @@ import {
   
             <Container className="mt-20">
               <Text className="text-center text-gray-400 mb-45">
-                &copy; {new Date().getFullYear()} {process.env.BRAND}
+                &copy; {new Date().getFullYear()} {process.env.NEXT_PUBLIC_BRAND}
               </Text>
             </Container>
           </Body>

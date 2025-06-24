@@ -11,23 +11,23 @@ export async function POST(request: NextRequest) {
   const emailHtml = await render(<Email email={email} name={name} phone={phone} message={message} subject={subject} />);
 
   const transport = nodemailer.createTransport({
-    host: process.env.SMTP_HOST,
-    port: parseInt(process.env.SMTP_PORT as string),
+    host: process.env.NEXT_PUBLIC_SMTP_HOST,
+    port: parseInt(process.env.NEXT_PUBLIC_SMTP_PORT as string),
     secure: false,
     tls: {
         ciphers: "SSLv3",
         rejectUnauthorized: false,
     },
     auth: {
-      user: process.env.SMTP_FROM,
-      pass: process.env.SMTP_PASSWORD,
+      user: process.env.NEXT_PUBLIC_SMTP_FROM,
+      pass: process.env.NEXT_PUBLIC_SMTP_PASSWORD,
     },
   });
 
   const mailOptions: Mail.Options = {
-    from: `${process.env.URL} ricky@landino.dev`,
-    to: process.env.TO_EMAIL,
-    subject: `${process.env.BRAND} Website Contact`,
+    from: `${process.env.NEXT_PUBLIC_URL} ricky@landino.dev`,
+    to: process.env.NEXT_PUBLIC_TO_EMAIL,
+    subject: `${process.env.NEXT_PUBLIC_BRAND} Website Contact`,
     html: emailHtml,
     replyTo: email
   };

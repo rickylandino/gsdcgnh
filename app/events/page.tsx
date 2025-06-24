@@ -70,9 +70,9 @@ export default function EventsPage() {
   const filteredUpcomingEvents = filterEventsByCategory(upcomingEvents)
   const filteredPastEvents = filterEventsByCategory(pastEvents)
 
-  const formatDate = (dateString: string) => {
+  const formatDate = (dateString: string, hideDay: boolean = false) => {
     const date = new Date(dateString)
-    if (!dateString.match(/^\d{4}-\d{2}-\d{2}$/)) {
+    if (hideDay) {
       // If dateString does not have a day, show only month and year
       return date.toLocaleDateString("en-US", {
         year: "numeric",
@@ -172,7 +172,7 @@ export default function EventsPage() {
             <div className="space-y-1 text-sm text-gray-600">
               <div className="flex items-center gap-2">
                 <Calendar className="h-4 w-4" />
-                <span>{formatDate(event.date)}</span>
+                <span>{formatDate(event.date, event.hideDay)}</span>
               </div>
               <div className="flex items-center gap-2">
                 <Clock className="h-4 w-4" />

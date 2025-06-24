@@ -4,7 +4,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import Image from "next/image"
 import Link from "next/link"
 import PhotoGallery from "@/components/photo-gallery"
-import { upcomingEvents } from "./events/page"
+import { upcomingEvents } from "./events/events"
 
 export default function HomePage() {
     return (

@@ -19,114 +19,7 @@ import {
   FileText,
 } from "lucide-react"
 import PhotoGallery from "@/components/photo-gallery"
-
-interface EventPhoto {
-  id: string
-  src: string
-  alt: string
-  caption?: string
-}
-
-interface EventDocument {
-  id: string
-  title: string
-  type: "premium-list" | "entry-form" | "results" | "flyer" | "info" | "photos"
-  url: string
-  size?: string
-}
-
-interface Event {
-  id: string
-  title: string
-  date: string
-  time: string
-  location: string
-  category: "meeting" | "trial" | "seminar" | "conformation" | "obedience"
-  description: string
-  htmlDescription?: string
-  registrationRequired: boolean
-  hasDocuments: boolean
-  results?: string
-  photos?: EventPhoto[]
-  documents?: EventDocument[]
-}
-
-const events: Event[] = [
-  // Past Events
-  {
-    id: "1",
-    title: "Obedience and Rally All Breed Speciality Trial Manchester CT",
-    date: "2025-07-20",
-    time: "8:30 AM - 5:00 PM",
-    location: "175 Adams st Manchester CT 06402",
-    category: "obedience",
-    description:
-      "The German Shepherd Club of Greater New Haven is hosting an Obedience and Rally Trial at Tails You Win!",
-    htmlDescription: `
-      <p>The German Shepherd Club of Greater New Haven is hosting an Obedience and Rally Trial
-        at Tails You Win!</p>
-        <p>Entries Open May 30 2025</p>
-        <p>Entries Close 12PM Wed July 2 2025</p>
-    `,
-    registrationRequired: false,
-    hasDocuments: true,
-    photos: [
-      {
-        id: "1",
-        src: "/events/2025_obediance_trial_manchester_ct.jpg",
-        alt: "2025 Obedience Trial in Manchester CT",
-      }
-    ],
-    documents: [
-      {
-        id: "doc-1",
-        title: "2025 German Shepherd Premium List",
-        type: "info",
-        url: "/documents/2025-German_Shepherd_Premium_List_.pdf",
-        size: "386 KB",
-      }
-    ],
-  },
-  {
-    id: "2",
-    title: "Conformation Show in October",
-    date: "October 2025",
-    time: "TBD",
-    location: "TBD",
-    category: "conformation",
-    description: "The German Shepherd Club Of Greater New haven is hosting a Conformation show in October 2025.",
-    htmlDescription: `
-      <p>The German Shepherd Club Of Greater New haven is hosting a Conformation show in October 2025.<p>
-        <p>Premium to follow.</p>
-    `,
-    registrationRequired: true,
-    hasDocuments: false,
-    photos: [
-      {
-        id: "1",
-        src: "/events/2025/conformation_october.png",
-        alt: "Conformation October Show"
-      }
-    ]
-  },
-  {
-    id: "1",
-    title: "Monthly Meeting",
-    date: "2025-06-13",
-    time: "7:00 PM - 9:00 PM",
-    location: "Virtual",
-    category: "meeting",
-    description:
-      "GERMAN SHEPHERD DOG CLUB OF GREATER NEW HAVEN MEETING NOTICE",
-    htmlDescription: `
-      <p>Board Meeting 7:00 to 7:30</p>
-        <p>General Meeting 7:30 to 9:00</p>
-
-    `,
-    registrationRequired: false,
-    hasDocuments: false,
-  }
-]
+import { pastEvents, upcomingEvents, Event as EventType, events } from "./events"
 
 const categoryColors = {
   meeting: "bg-blue-100 text-blue-800",
@@ -162,20 +55,15 @@ const documentTypeIcons = {
   photos: ImageIcon,
 }
 
-
-  const today = new Date()
-  today.setHours(0, 0, 0, 0)
-  
-  export const upcomingEvents = events.filter((event) => new Date(event.date) >= today)
-  const pastEvents = events.filter((event) => new Date(event.date) < today)
-
+const today = new Date()
+today.setHours(0, 0, 0, 0)
 
 export default function EventsPage() {
   const [currentDate, setCurrentDate] = useState(new Date())
   const [selectedCategory, setSelectedCategory] = useState<string>("all")
 
 
-  const filterEventsByCategory = (eventList: Event[]) => {
+  const filterEventsByCategory = (eventList: EventType[]) => {
     return selectedCategory === "all" ? eventList : eventList.filter((event) => event.category === selectedCategory)
   }
 
@@ -259,7 +147,7 @@ export default function EventsPage() {
 
   const calendarDays = getCalendarDays()
 
-  const EventCard = ({ event, isPast = false }: { event: Event; isPast?: boolean }) => (
+  const EventCard = ({ event, isPast = false }: { event: EventType; isPast?: boolean }) => (
     <Card key={event.id} className={`hover:shadow-lg transition-shadow ${isPast ? "opacity-90" : ""}`}>
       <CardHeader>
         <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-4">

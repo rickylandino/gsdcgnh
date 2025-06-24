@@ -9,8 +9,6 @@ export async function POST(request: NextRequest) {
   const { email, name, phone, message, subject } = await request.json();
 
   const emailHtml = await render(<Email email={email} name={name} phone={phone} message={message} subject={subject} />);
-
-  console.log("SMTP_PASSWORD is set:", !!process.env.SMTP_PASSWORD);
   
   const transport = nodemailer.createTransport({
     host: process.env.NEXT_PUBLIC_SMTP_HOST,

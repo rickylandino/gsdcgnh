@@ -159,15 +159,19 @@ export default function HomePage() {
                     <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
 
                         {upcomingEvents.map((event) => (
-                            <Card key={event.id}>
-                                <CardHeader>
-                                    <CardTitle className="text-blue-600">{event.title}</CardTitle>
-                                    <CardDescription>{event.date} • {event.time}</CardDescription>
-                                </CardHeader>
-                                <CardContent>
-                                    <p className="text-gray-600">{event.description}</p>
-                                </CardContent>
-                            </Card>
+                            <Link key={event.id} href="/events" passHref legacyBehavior>
+                                <a>
+                                    <Card>
+                                        <CardHeader>
+                                            <CardTitle className="text-blue-600">{event.title}</CardTitle>
+                                            <CardDescription>{event.date} • {event.time}</CardDescription>
+                                        </CardHeader>
+                                        <CardContent>
+                                            <p className="text-gray-600">{event.description}</p>
+                                        </CardContent>
+                                    </Card>
+                                </a>
+                            </Link>
                         ))}
                     </div>
                 </div>

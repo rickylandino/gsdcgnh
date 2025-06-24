@@ -38,7 +38,7 @@ export async function POST(request: NextRequest) {
         if (!err) {
           resolve('Email sent');
         } else {
-          reject(err.message);
+          reject(err.message); 
         }
       });
     });

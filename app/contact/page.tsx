@@ -23,7 +23,7 @@ export default function ContactPage() {
 
         if (getValues().email) {
             setLoading(true);
-            let postdata = {
+            const postdata = {
                 ...getValues()
             };
 

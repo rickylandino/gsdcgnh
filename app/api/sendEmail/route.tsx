@@ -20,7 +20,7 @@ export async function POST(request: NextRequest) {
     },
     auth: {
       user: process.env.NEXT_PUBLIC_SMTP_FROM,
-      pass: process.env.NEXT_PUBLIC_SMTP_PASSWORD,
+      pass: process.env.SMTP_PASSWORD,
     },
   });
 

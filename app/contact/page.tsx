@@ -8,16 +8,13 @@ import { Mail, Phone, Facebook } from "lucide-react"
 import { performSend } from "../../service/mailService";
 import { useForm } from 'react-hook-form';
 
-import clsx from "clsx";
 import { useState } from "react"
 
 export default function ContactPage() {
-    const { register, getValues, setValue, handleSubmit, watch, formState: { errors }, reset } = useForm();
+    const { register, getValues, reset } = useForm();
 
     const [successVisible, setSuccessVisible] = useState(false);
     const [errorVisible, setErrorVisible] = useState(false);
-
-    const [showMissingEmail, setShowMissingEmail] = useState(false);
 
     const [loading, setLoading] = useState(false);
 
@@ -26,7 +23,6 @@ export default function ContactPage() {
 
         if (getValues().email) {
             setLoading(true);
-            setShowMissingEmail(false);
             let postdata = {
                 ...getValues()
             };
@@ -40,12 +36,10 @@ export default function ContactPage() {
                     setSuccessVisible(true);
                     reset();
                 }
-            }).catch((err) => {
+            }).catch(() => {
                 setLoading(false);
                 setErrorVisible(true);
             });
-        } else {
-            setShowMissingEmail(true);
         }
     }
 

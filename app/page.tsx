@@ -1,4 +1,4 @@
-'use client'
+"use client"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import Image from "next/image"
@@ -18,7 +18,7 @@ export default function HomePage() {
                                 Welcome to the German Shepherd Dog Club of Greater New Haven
                             </h1>
                             <p className="text-xl text-gray-600 leading-relaxed">
-                                The German Shepherd Dog Club of Greater New Haven is Connecticut’s first and only AKC-recognized club devoted to the German Shepherd breed. Since 1960, we've united passionate owners, breeders, and exhibitors to uphold the breed’s excellence through education, competition, and community. From hosting specialty shows and obedience trials to promoting responsible breeding standards, our club celebrates the heritage and future of these extraordinary dogs—supporting everyone from seasoned professionals to first-time fans
+                                The German Shepherd Dog Club of Greater New Haven is Connecticut&apos;s first and only AKC-recognized club devoted to the German Shepherd breed. Since 1960, we've united passionate owners, breeders, and exhibitors to uphold the breed&apos;s excellence through education, competition, and community. From hosting specialty shows and obedience trials to promoting responsible breeding standards, our club celebrates the heritage and future of these extraordinary dogs—supporting everyone from seasoned professionals to first-time fans
                             </p>
                             <div className="flex flex-col sm:flex-row gap-4">
                                 <Button asChild size="lg" className="bg-blue-600 hover:bg-blue-700">

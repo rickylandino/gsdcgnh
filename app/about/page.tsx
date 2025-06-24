@@ -1,6 +1,4 @@
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
-import { Users, Award, Heart, Target } from "lucide-react"
-import Image from "next/image"
+import { Card, CardContent, CardDescription } from "@/components/ui/card"
 import PhotoGallery from "@/components/photo-gallery"
 
 export default function AboutPage() {

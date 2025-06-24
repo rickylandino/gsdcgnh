@@ -1,6 +1,5 @@
 import Link from "next/link"
 import Image from "next/image"
-import { Facebook, Mail, Phone, MapPin } from "lucide-react"
 
 export default function Footer() {
   return (

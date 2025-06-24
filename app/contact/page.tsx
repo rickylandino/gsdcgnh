@@ -14,7 +14,7 @@ export default function ContactPage() {
           <div className="text-center">
             <h1 className="text-4xl md:text-5xl font-bold mb-6">Contact Us</h1>
             <p className="text-xl text-blue-100 max-w-3xl mx-auto">
-              Get in touch with the German Shepherd Dog Club of Greater New Haven. We're here to help with any questions
+              Get in touch with the German Shepherd Dog Club of Greater New Haven. We&apos;re here to help with any questions
               about our club, events, or German Shepherds.
             </p>
           </div>
@@ -30,7 +30,7 @@ export default function ContactPage() {
               <CardHeader>
                 <CardTitle>Send us a Message</CardTitle>
                 <CardDescription>
-                  Fill out the form below and we'll get back to you as soon as possible.
+                  Fill out the form below and we&apos;ll get back to you as soon as possible.
                 </CardDescription>
               </CardHeader>
               <CardContent>
@@ -103,7 +103,7 @@ export default function ContactPage() {
                 <CardContent>
                   <p className="text-gray-600">(xxx) xxx-xxxx</p>
                   <p className="text-sm text-gray-500 mt-2">
-                    Please leave a voicemail if we don't answer - we'll call you back!
+                    Please leave a voicemail if we don&apos;t answer - we&apos;ll call you back!
                   </p>
                 </CardContent>
               </Card>
@@ -176,69 +176,6 @@ export default function ContactPage() {
           </div>
         </div>
       </section>
-
-      {/* FAQ Section */}
-      {/* <section className="py-16 px-4 bg-white">
-        <div className="container mx-auto max-w-4xl">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-gray-900 mb-4">Frequently Asked Questions</h2>
-            <p className="text-lg text-gray-600">Quick answers to common questions</p>
-          </div>
-
-          <div className="space-y-6">
-            <Card>
-              <CardHeader>
-                <CardTitle className="text-lg">Do I need to own a German Shepherd to join?</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <p className="text-gray-600">
-                  While most of our members own German Shepherds, we welcome anyone with a genuine interest in the
-                  breed. Whether you're considering getting a German Shepherd or simply admire the breed, you're welcome
-                  to join our community.
-                </p>
-              </CardContent>
-            </Card>
-
-            <Card>
-              <CardHeader>
-                <CardTitle className="text-lg">Can I attend a meeting before joining?</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <p className="text-gray-600">
-                  We encourage prospective members to attend a meeting as our guest before deciding to join. Please
-                  contact us in advance so we can welcome you properly.
-                </p>
-              </CardContent>
-            </Card>
-
-            <Card>
-              <CardHeader>
-                <CardTitle className="text-lg">What should I bring to my first meeting?</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <p className="text-gray-600">
-                  Just bring yourself and your enthusiasm for German Shepherds! If you have photos of your dog(s), we'd
-                  love to see them. No need to bring your dog to regular meetings unless it's a special training
-                  session.
-                </p>
-              </CardContent>
-            </Card>
-
-            <Card>
-              <CardHeader>
-                <CardTitle className="text-lg">How can I get involved in club activities?</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <p className="text-gray-600">
-                  There are many ways to get involved! You can volunteer at events, help with setup and cleanup, assist
-                  with our newsletter, or even help organize activities. We'll match your interests and availability
-                  with opportunities.
-                </p>
-              </CardContent>
-            </Card>
-          </div>
-        </div>
-      </section> */}
     </div>
   )
 }

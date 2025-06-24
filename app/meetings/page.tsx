@@ -251,8 +251,8 @@ export default function MeetingsPage() {
                   <ul className="list-disc list-inside text-gray-600 space-y-1">
                     <li>Please contact us in advance so we can welcome you properly</li>
                     <li>Arrive a few minutes early to introduce yourself</li>
-                    <li>Feel free to ask questions - we're here to help!</li>
-                    <li>No need to bring your dog unless it's a special training session</li>
+                    <li>Feel free to ask questions - we&apos;re here to help!</li>
+                    <li>No need to bring your dog unless it&apos;s a special training session</li>
                   </ul>
                 </div>
 
@@ -261,7 +261,7 @@ export default function MeetingsPage() {
                   <ul className="list-disc list-inside text-gray-600 space-y-1">
                     <li>Notebook and pen for taking notes</li>
                     <li>Photos of your German Shepherd(s) to share</li>
-                    <li>Any questions you'd like to ask the group</li>
+                    <li>Any questions you&apos;d like to ask the group</li>
                     <li>A positive attitude and willingness to learn</li>
                   </ul>
                 </div>
@@ -272,7 +272,7 @@ export default function MeetingsPage() {
                     <li>Please silence cell phones during presentations</li>
                     <li>Respectful discussion and questions are always welcome</li>
                     <li>Stay for refreshments and socializing after the formal meeting</li>
-                    <li>Help with setup or cleanup if you're able</li>
+                    <li>Help with setup or cleanup if you&apos;re able</li>
                   </ul>
                 </div>
               </div>
@@ -286,7 +286,7 @@ export default function MeetingsPage() {
         <div className="container mx-auto max-w-4xl text-center">
           <h2 className="text-3xl font-bold mb-4">Join Us at Our Next Meeting</h2>
           <p className="text-xl mb-8 text-blue-100">
-            Whether you're a seasoned German Shepherd owner or just getting started, our meetings offer valuable
+            Whether you&apos;re a seasoned German Shepherd owner or just getting started, our meetings offer valuable
             insights and great community connections.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">

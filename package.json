@@ -15,12 +15,18 @@
     "@radix-ui/react-select": "^2.2.5",
     "@radix-ui/react-slot": "^1.2.3",
     "@radix-ui/react-tabs": "^1.1.12",
+    "@react-email/components": "^0.1.0",
+    "@react-email/render": "^1.1.2",
+    "@react-email/tailwind": "^1.0.5",
+    "@types/nodemailer": "^6.4.17",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
     "lucide-react": "^0.522.0",
     "next": "15.2.4",
+    "nodemailer": "^7.0.3",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
+    "react-hook-form": "^7.58.1",
     "tailwind-merge": "^3.3.1"
   },
   "devDependencies": {

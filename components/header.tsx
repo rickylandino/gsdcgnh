@@ -43,11 +43,11 @@ console.log(screenWidth);
             <Image src="/gsdognh_logo.png" alt="gsdognh logo" width={150} height={150} className="rounded-full" style={{ paddingTop: 80 }} />
         ) : (
             <>
-            <Image src="/logo_no_circle2.png" alt="GSDCGNH Logo" width={95} height={95} />
-            <div className="hidden sm:block">
+            <Image src="/gsdognh_logo.png" alt="GSDCGNH Logo" width={95} height={95} />
+            {/* <div className="hidden sm:block">
               <div className="text-lg font-bold text-blue-600">German Shepherd Dog Club</div>
               <div className="text-xs text-gray-600">Of Greater New Haven</div>
-            </div>
+            </div> */}
             </>
         )}
             {/* <Image src="/gsdognh_logo.png" alt="gsdognh logo" width={150} height={150} className="rounded-full" />

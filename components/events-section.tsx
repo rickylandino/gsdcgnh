@@ -1,7 +1,5 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
-import { Button } from "@/components/ui/button"
-import { Calendar, MapPin, Trophy, Camera } from "lucide-react"
-import Link from "next/link"
+import { Calendar, MapPin } from "lucide-react"
 import { upcomingEvents } from "@/app/events/events"
 
 export function EventsSection() {

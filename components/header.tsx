@@ -34,22 +34,12 @@ useEffect(() => {
 console.log(screenWidth);
 
   return (
-    <header className="bg-white shadow-md sticky top-0 z-50">
+    <header className="chrome-gradient shadow-md sticky top-0 z-50">
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-24">
           {/* Logo */}
           <Link href="/" className="flex items-center space-x-3">
-        {screenWidth >= 1536 ? (
-            <Image src="/gsdognh_logo.png" alt="gsdognh logo" width={150} height={150} className="rounded-full" style={{ paddingTop: 80 }} />
-        ) : (
-            <>
-            <Image src="/gsdognh_logo.png" alt="GSDCGNH Logo" width={95} height={95} />
-            {/* <div className="hidden sm:block">
-              <div className="text-lg font-bold text-blue-600">German Shepherd Dog Club</div>
-              <div className="text-xs text-gray-600">Of Greater New Haven</div>
-            </div> */}
-            </>
-        )}
+            <Image src="/gsdognh_logo.png" alt="GSDCGNH Logo" width={95} height={95} className="rounded-full" />
             {/* <Image src="/gsdognh_logo.png" alt="gsdognh logo" width={150} height={150} className="rounded-full" />
 
             <Image src="/logo_no_circle2.png" alt="GSDCGNH Logo" width={95} height={95} /> */}
@@ -60,7 +50,7 @@ console.log(screenWidth);
           <nav className="hidden lg:flex items-center space-x-8">
             {navigation.map((item) => (
               <div key={item.name} className="relative group">
-                <Link href={item.href} className="text-gray-700 hover:text-blue-600 font-medium transition-colors">
+                <Link href={item.href} className="text-chrome-200 hover:text-white transition-colors duration-200 font-medium">
                   {item.name}
                 </Link>
               </div>
@@ -81,7 +71,7 @@ console.log(screenWidth);
                 <div key={item.name}>
                   <Link
                     href={item.href}
-                    className="block px-4 py-2 text-gray-700 hover:bg-blue-50 hover:text-blue-600 rounded-md"
+                    className="text-chrome-200 hover:text-white transition-colors duration-200 font-medium"
                     onClick={() => setIsMenuOpen(false)}
                   >
                     {item.name}

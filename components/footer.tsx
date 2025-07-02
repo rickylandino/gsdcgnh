@@ -3,8 +3,9 @@ import Image from "next/image"
 
 export default function Footer() {
   return (
-    <footer className="bg-gray-900 text-white">
-      <div className="container mx-auto px-4 py-12">
+    <footer className="relative flex items-center justify-center overflow-hidden">
+      <div className="absolute inset-0 chrome-gradient opacity-80" />
+      <div className="container mx-auto px-4 py-12 z-10 relative">
         <div className="grid md:grid-cols-2 lg:grid-cols-2 gap-8">
           {/* Club Info */}
           <div className="space-y-4">
@@ -21,7 +22,7 @@ export default function Footer() {
 
           {/* Quick Links */}
           <div>
-            <h3 className="font-semibold text-lg mb-4">Quick Links</h3>
+            <h3 className="font-semibold text-lg mb-4 text-white">Quick Links</h3>
             <ul className="space-y-2 text-sm">
               <li>
                 <Link href="/about" className="text-gray-300 hover:text-white transition-colors">
@@ -99,7 +100,7 @@ export default function Footer() {
           </div> */}
         </div>
 
-        <div className="border-t border-gray-800 mt-8 pt-8 text-center text-sm text-gray-400">
+        <div className="border-t border-gray-800 mt-8 pt-8 text-center text-sm text-chrome-400">
           <p>&copy; {new Date().getFullYear()} German Shepherd Dog Club of Greater New Haven. All rights reserved.</p>
         </div>
       </div>

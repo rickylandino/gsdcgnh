@@ -130,17 +130,17 @@ export default function EventsPage() {
     return days
   }
 
-  const navigateMonth = (direction: "prev" | "next") => {
-    const newDate = new Date(currentDate)
-    if (direction === "prev") {
-      newDate.setMonth(newDate.getMonth() - 1)
-    } else {
-      newDate.setMonth(newDate.getMonth() + 1)
-    }
-    setCurrentDate(newDate)
-  }
+//   const navigateMonth = (direction: "prev" | "next") => {
+//     const newDate = new Date(currentDate)
+//     if (direction === "prev") {
+//       newDate.setMonth(newDate.getMonth() - 1)
+//     } else {
+//       newDate.setMonth(newDate.getMonth() + 1)
+//     }
+//     setCurrentDate(newDate)
+//   }
 
-  const calendarDays = getCalendarDays()
+//   const calendarDays = getCalendarDays()
 
   const EventCard = ({ event, isPast = false }: { event: EventType; isPast?: boolean }) => (
     <Card key={event.id} className={`hover:shadow-lg transition-shadow ${isPast ? "opacity-90" : ""}`}>

@@ -19,7 +19,7 @@ interface Event {
   date: string
   time: string
   location: string
-  category: "meeting" | "trial" | "seminar" | "conformation" | "obedience"
+  category: "trial" | "seminar" | "conformation" | "obedience"
   description: string
   htmlDescription?: string
   registrationRequired: boolean
@@ -89,23 +89,23 @@ const events: Event[] = [
             }
         ]
     },
-    {
-        id: "3",
-        title: "Monthly Meeting",
-        date: "2025-06-13",
-        time: "7:00 PM - 9:00 PM",
-        location: "Virtual",
-        category: "meeting",
-        description:
-            "GERMAN SHEPHERD DOG CLUB OF GREATER NEW HAVEN MEETING NOTICE",
-        htmlDescription: `
-            <p>Board Meeting 7:00 to 7:30</p>
-                <p>General Meeting 7:30 to 9:00</p>
+    // {
+    //     id: "3",
+    //     title: "Monthly Meeting",
+    //     date: "2025-06-13",
+    //     time: "7:00 PM - 9:00 PM",
+    //     location: "Virtual",
+    //     category: "meeting",
+    //     description:
+    //         "GERMAN SHEPHERD DOG CLUB OF GREATER NEW HAVEN MEETING NOTICE",
+    //     htmlDescription: `
+    //         <p>Board Meeting 7:00 to 7:30</p>
+    //             <p>General Meeting 7:30 to 9:00</p>
 
-        `,
-        registrationRequired: false,
-        hasDocuments: false,
-    }
+    //     `,
+    //     registrationRequired: false,
+    //     hasDocuments: false,
+    // }
 ]
 
 const today = new Date()

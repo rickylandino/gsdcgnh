@@ -12,7 +12,9 @@ export default function Header() {
   const navigation = [
     { name: "Home", href: "/" },
     { name: "About Us", href: "/about" },
-    { name: "Meetings & Events", href: "/events" },
+    { name: "Officers & Board", href: "/officers" },
+    { name: "Meetings", href: "/meetings" },
+    { name: "Events", href: "/events" },
     { name: "Membership", href: "/membership" },
     { name: "Contact", href: "/contact" },
   ]
@@ -38,7 +40,7 @@ console.log(screenWidth);
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-24">
           {/* Logo */}
-          <Link href="/" className="flex items-center space-x-3">
+          <Link href="/" className="flex items-center space-x-3 p-2">
             <Image src="/gsdognh_logo.png" alt="GSDCGNH Logo" width={95} height={95} className="rounded-full" />
             {/* <Image src="/gsdognh_logo.png" alt="gsdognh logo" width={150} height={150} className="rounded-full" />
 

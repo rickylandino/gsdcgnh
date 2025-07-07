@@ -1,16 +1,16 @@
 import { Button } from "@/components/ui/button"
-import { Card, CardContent, CardDescription } from "@/components/ui/card"
 import { Download } from "lucide-react"
 
 export default function MembershipPage() {
   return (
-    <div className="min-h-screen bg-gray-50">
+    <div className="bg-gray-50">
       {/* Hero Section */}
-      <section className="bg-blue-600 text-white py-16">
-        <div className="container mx-auto px-4 max-w-6xl">
+      <section className="text-white py-16 relative">
+        <div className="absolute inset-0 chrome-gradient opacity-80" />
+        <div className="container mx-auto px-4 max-w-6xl relative z-10">
           <div className="text-center">
             <h1 className="text-4xl md:text-5xl font-bold mb-6">Join Our Community</h1>
-            <p className="text-xl text-blue-100 max-w-3xl mx-auto">
+            <p className="text-xl text-chrome-200 max-w-3xl mx-auto">
               Become a member of the German Shepherd Dog Club of Greater New Haven and connect with fellow enthusiasts
               who share your passion for these amazing dogs.
             </p>
@@ -19,7 +19,7 @@ export default function MembershipPage() {
       </section>
 
       {/* Membership Benefits */}
-      <section className="py-16 px-4">
+      {/* <section className="py-16 px-4">
         <div className="container mx-auto max-w-6xl">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold text-gray-900 mb-4">Why should I Join the Club?</h2>
@@ -67,7 +67,7 @@ export default function MembershipPage() {
             </p>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Membership Types */}
       {/* <section className="py-16 px-4 bg-white">
@@ -183,12 +183,12 @@ export default function MembershipPage() {
             <a href="/documents/2025_membership_application.pdf" download>
                 <div className="flex items-start gap-2 w-full">
                 <div className="text-left">
-                    <div className="font-medium text-sm">{(new Date()).getFullYear()} Membership Application</div>
-                    <div className="text-xs text-gray-500">
+                    <div className="font-medium text-sm text-gray-900">{(new Date()).getFullYear()} Membership Application</div>
+                    <div className="text-xs text-gray-600">
                     {`• 528 KB`}
                     </div>
                 </div>
-                <Download className="h-3 w-3 ml-auto flex-shrink-0" />
+                <Download className="h-3 w-3 ml-auto flex-shrink-0 text-gray-600" />
                 </div>
             </a>
             </Button>

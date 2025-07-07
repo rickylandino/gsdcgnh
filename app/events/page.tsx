@@ -10,9 +10,6 @@ import {
   Calendar,
   Clock,
   MapPin,
-  Users,
-  ChevronLeft,
-  ChevronRight,
   Download,
   History,
   ImageIcon,
@@ -22,7 +19,6 @@ import PhotoGallery from "@/components/photo-gallery"
 import { pastEvents, upcomingEvents, Event as EventType, events } from "./events"
 
 const categoryColors = {
-  meeting: "bg-blue-100 text-blue-800",
   trial: "bg-green-100 text-green-800",
   seminar: "bg-purple-100 text-purple-800",
   conformation: "bg-orange-100 text-orange-800",
@@ -30,7 +26,6 @@ const categoryColors = {
 }
 
 const categoryLabels = {
-  meeting: "Meeting",
   trial: "Scent Work Trials",
   seminar: "Seminar",
   conformation: "Conformation",
@@ -166,7 +161,7 @@ export default function EventsPage() {
                 </Badge>
               )}
             </div>
-            <CardTitle className={`text-xl mb-2 ${isPast ? "text-gray-600" : "text-blue-600"}`}>
+            <CardTitle className={`text-xl mb-2 ${isPast ? "text-gray-600" : "text-chrome-600"}`}>
               {event.title}
             </CardTitle>
             <div className="space-y-1 text-sm text-gray-600">
@@ -256,15 +251,6 @@ export default function EventsPage() {
             </div>
           </div>
         )}
-
-        {event.category === "meeting" && !isPast && (
-          <div className="p-3 bg-blue-50 rounded-lg">
-            <div className="flex items-center gap-2 text-sm text-blue-800">
-              <Users className="h-4 w-4" />
-              <span>Members and guests welcome - Contact us to attend as a guest</span>
-            </div>
-          </div>
-        )}
       </CardContent>
     </Card>
   )
@@ -272,11 +258,12 @@ export default function EventsPage() {
   return (
     <div className="min-h-screen bg-gray-50">
       {/* Hero Section */}
-      <section className="bg-blue-600 text-white py-16">
-        <div className="container mx-auto px-4 max-w-6xl">
+      <section className="  text-white py-16 relative">
+        <div className="absolute inset-0 chrome-gradient opacity-80" />
+        <div className="container mx-auto px-4 max-w-6xl relative z-10">
           <div className="text-center">
-            <h1 className="text-4xl md:text-5xl font-bold mb-6">Club Events</h1>
-            <p className="text-xl text-blue-100 max-w-3xl mx-auto">
+            <h1 className="text-4xl md:text-5xl font-bold mb-6 text-white">Club Events</h1>
+            <p className="text-xl text-chrome-200 max-w-3xl mx-auto">
               Stay up to date with all our meetings, trials, seminars, and social events throughout the year.
             </p>
           </div>
@@ -287,7 +274,7 @@ export default function EventsPage() {
         <div className="grid lg:grid-cols-4 gap-8">
           {/* Calendar and Filter Section */}
           <div className="lg:col-span-1">
-            <Card>
+            {/* <Card>
               <CardHeader>
                 <div className="flex items-center justify-between">
                   <CardTitle className="text-lg">
@@ -343,7 +330,7 @@ export default function EventsPage() {
                   </div>
                 </div>
               </CardContent>
-            </Card>
+            </Card> */}
 
             {/* Category Filter */}
             <Card className="mt-6">

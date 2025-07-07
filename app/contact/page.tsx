@@ -44,13 +44,14 @@ export default function ContactPage() {
     }
 
     return (
-        <div className="min-h-screen bg-gray-50">
+        <div className="bg-gray-50">
             {/* Hero Section */}
-            <section className="bg-blue-600 text-white py-16">
-                <div className="container mx-auto px-4 max-w-6xl">
+            <section className="text-white py-16 relative">
+                <div className="absolute inset-0 chrome-gradient opacity-80" />
+                <div className="container mx-auto px-4 max-w-6xl relative z-10">
                     <div className="text-center">
-                        <h1 className="text-4xl md:text-5xl font-bold mb-6">Contact Us</h1>
-                        <p className="text-xl text-blue-100 max-w-3xl mx-auto">
+                        <h1 className="text-4xl md:text-5xl font-bold mb-6 text-white">Contact Us</h1>
+                        <p className="text-xl text-chrome-200 max-w-3xl mx-auto">
                             Get in touch with the German Shepherd Dog Club of Greater New Haven. We&apos;re here to help with any questions
                             about our club, events, or German Shepherds.
                         </p>
@@ -125,7 +126,7 @@ export default function ContactPage() {
                                         </div>
                                     }
                                     {!loading ?
-                                    <Button type="submit" className="w-full bg-blue-600 hover:bg-blue-700" onClick={onSubmit}>
+                                    <Button size="lg" onClick={onSubmit} type="submit" variant="secondary" className="bg-chrome-400 text-black hover:bg-chrome-300">
                                         Send Message
                                     </Button>
                                     :
@@ -146,7 +147,7 @@ export default function ContactPage() {
                             <Card>
                                 <CardHeader>
                                     <CardTitle className="flex items-center space-x-2">
-                                        <Mail className="h-5 w-5 text-blue-600" />
+                                        <Mail className="h-5 w-5 text-chrome-600" />
                                         <span>Email</span>
                                     </CardTitle>
                                 </CardHeader>
@@ -159,7 +160,7 @@ export default function ContactPage() {
                             <Card>
                                 <CardHeader>
                                     <CardTitle className="flex items-center space-x-2">
-                                        <Phone className="h-5 w-5 text-blue-600" />
+                                        <Phone className="h-5 w-5 text-chrome-600" />
                                         <span>Phone</span>
                                     </CardTitle>
                                 </CardHeader>
@@ -214,7 +215,7 @@ export default function ContactPage() {
                             <Card>
                                 <CardHeader>
                                     <CardTitle className="flex items-center space-x-2">
-                                        <Facebook className="h-5 w-5 text-blue-600" />
+                                        <Facebook className="h-5 w-5 text-chrome-600" />
                                         <span>Social Media</span>
                                     </CardTitle>
                                 </CardHeader>
@@ -228,7 +229,7 @@ export default function ContactPage() {
                                     >
                                         <Button
                                             variant="outline"
-                                            className="border-blue-600 text-blue-600 hover:bg-blue-50"
+                                            className="border-gray-400 text-chrome-600 hover:bg-gray-400 hover:text-black font-semibold px-8 py-3 bg-transparent z-10"
                                         >
                                             Visit Our Facebook Page
                                         </Button>

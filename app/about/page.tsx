@@ -5,11 +5,12 @@ export default function AboutPage() {
     return (
         <div className="min-h-screen bg-gray-50">
             {/* Hero Section */}
-            <section className="bg-blue-600 text-white py-16">
-                <div className="container mx-auto px-4 max-w-6xl">
+            <section className="text-white py-16 relative">
+                <div className="absolute inset-0 chrome-gradient opacity-80" />
+                <div className="container mx-auto px-4 max-w-6xl relative z-10">
                     <div className="text-center">
                         <h1 className="text-4xl md:text-5xl font-bold mb-6">About Us</h1>
-                        <p className="text-xl text-blue-100 max-w-3xl mx-auto">
+                        <p className="text-xl text-chrome-200 max-w-3xl mx-auto">
                             The German Shepherd Dog Club of Greater New Haven was established in 1960 as the first and only AKC approved German Shepherd Dog Club in the state of Connecticut. We are an educational group of passionate German Shepherd fans interested in enhancing our relationships with our K-9 friends.
                         </p>
                     </div>
@@ -61,12 +62,12 @@ export default function AboutPage() {
             </section>
 
             {/* History Section */}
-            <section className="py-16 px-4">
+            <section className="py-16 px-4 bg-chrome-900">
                 <div className="container mx-auto max-w-6xl">
                     <div className="text-center mb-12">
                         <div>
-                            <h2 className="text-3xl font-bold text-gray-900 mb-6">Our History</h2>
-                            <div className="space-y-4 text-gray-600">
+                            <h2 className="text-3xl font-bold text-white mb-6">Our History</h2>
+                            <div className="space-y-4 text-chrome-200">
                                 <p>
                                     In 1950, the German Shepherd Dog Club of Greater New Haven was formed and dedicated to the enhancement of the breed in our area. Led by our first President William Goldbecker, a Fire Chief in New Haven, he brought to the membership the knowledge he had acquired from his native Cologne, Germany, about the German Shepherd Dog.
                                 </p>

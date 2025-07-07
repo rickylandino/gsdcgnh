@@ -16,7 +16,7 @@ import {
   FileText,
 } from "lucide-react"
 import PhotoGallery from "@/components/photo-gallery"
-import { pastEvents, upcomingEvents, Event as EventType, events } from "./events"
+import { pastEvents, upcomingEvents, Event as EventType } from "./events"
 
 const categoryColors = {
   trial: "bg-green-100 text-green-800",

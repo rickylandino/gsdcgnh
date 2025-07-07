@@ -54,7 +54,7 @@ const today = new Date()
 today.setHours(0, 0, 0, 0)
 
 export default function EventsPage() {
-  const [currentDate, setCurrentDate] = useState(new Date())
+//   const [currentDate, setCurrentDate] = useState(new Date())
   const [selectedCategory, setSelectedCategory] = useState<string>("all")
 
 
@@ -94,41 +94,41 @@ export default function EventsPage() {
     return ""
   }
 
-  const getCalendarDays = () => {
-    const year = currentDate.getFullYear()
-    const month = currentDate.getMonth()
-    const firstDay = new Date(year, month, 1)
-    const startDate = new Date(firstDay)
-    startDate.setDate(startDate.getDate() - firstDay.getDay())
+//   const getCalendarDays = () => {
+//     const year = currentDate.getFullYear()
+//     const month = currentDate.getMonth()
+//     const firstDay = new Date(year, month, 1)
+//     const startDate = new Date(firstDay)
+//     startDate.setDate(startDate.getDate() - firstDay.getDay())
 
-    const days = []
-    const currentDateObj = new Date(startDate)
+//     const days = []
+//     const currentDateObj = new Date(startDate)
 
-    for (let i = 0; i < 42; i++) {
-      const dayEvents = events.filter((event) => {
-        const eventDate = new Date(event.date)
-        return eventDate.toDateString() === currentDateObj.toDateString()
-      })
+//     for (let i = 0; i < 42; i++) {
+//       const dayEvents = events.filter((event) => {
+//         const eventDate = new Date(event.date)
+//         return eventDate.toDateString() === currentDateObj.toDateString()
+//       })
 
-      const isPast = currentDateObj < today
-      const upcomingDayEvents = dayEvents.filter((event) => new Date(event.date) >= today)
-      const pastDayEvents = dayEvents.filter((event) => new Date(event.date) < today)
+//       const isPast = currentDateObj < today
+//       const upcomingDayEvents = dayEvents.filter((event) => new Date(event.date) >= today)
+//       const pastDayEvents = dayEvents.filter((event) => new Date(event.date) < today)
 
-      days.push({
-        date: new Date(currentDateObj),
-        isCurrentMonth: currentDateObj.getMonth() === month,
-        isToday: currentDateObj.toDateString() === new Date().toDateString(),
-        events: dayEvents,
-        upcomingEvents: upcomingDayEvents,
-        pastEvents: pastDayEvents,
-        isPast,
-      })
+//       days.push({
+//         date: new Date(currentDateObj),
+//         isCurrentMonth: currentDateObj.getMonth() === month,
+//         isToday: currentDateObj.toDateString() === new Date().toDateString(),
+//         events: dayEvents,
+//         upcomingEvents: upcomingDayEvents,
+//         pastEvents: pastDayEvents,
+//         isPast,
+//       })
 
-      currentDateObj.setDate(currentDateObj.getDate() + 1)
-    }
+//       currentDateObj.setDate(currentDateObj.getDate() + 1)
+//     }
 
-    return days
-  }
+//     return days
+//   }
 
 //   const navigateMonth = (direction: "prev" | "next") => {
 //     const newDate = new Date(currentDate)

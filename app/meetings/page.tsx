@@ -34,10 +34,6 @@ export default function MeetingsPage() {
       {/* Upcoming Meetings */}
       <section className="py-16 px-4 bg-white">
         <div className="container mx-auto max-w-6xl">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-gray-900 mb-4">Upcoming Meetings</h2>
-            <p className="text-lg text-gray-600">Mark your calendar for these exciting presentations</p>
-          </div>
 
           <div className="space-y-6">
             {upcomingMeetings.map((meeting, index) => (

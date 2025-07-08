@@ -65,8 +65,18 @@ export default function EventsPage() {
   const filteredUpcomingEvents = filterEventsByCategory(upcomingEvents)
   const filteredPastEvents = filterEventsByCategory(pastEvents)
 
+  // Helper to parse date string as local date if only a date is provided (YYYY-MM-DD)
+  const parseDateAsUTC = (dateString: string) => {
+    // If dateString matches YYYY-MM-DD, treat as local midnight
+    if (/^\d{4}-\d{2}-\d{2}$/.test(dateString)) {
+      const [year, month, day] = dateString.split("-").map(Number)
+      return new Date(year, month - 1, day)
+    }
+    return new Date(dateString)
+  }
+
   const formatDate = (dateString: string, hideDay: boolean = false) => {
-    const date = new Date(dateString)
+    const date = parseDateAsUTC(dateString);
     if (hideDay) {
       // If dateString does not have a day, show only month and year
       return date.toLocaleDateString("en-US", {
@@ -83,7 +93,7 @@ export default function EventsPage() {
   }
 
   const getRelativeDate = (dateString: string) => {
-    const eventDate = new Date(dateString)
+    const eventDate = parseDateAsUTC(dateString)
     const diffTime = eventDate.getTime() - today.getTime()
     const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24))
 

@@ -40,10 +40,10 @@ const events: Event[] = [
         location: "175 Adams st Manchester CT 06402",
         category: "obedience",
         description:
-            "The German Shepherd Club of Greater New Haven is hosting an Obedience and Rally Trial at Tails You Win!",
+            "The German Shepherd Club of Greater New Haven is hosting an Obedience and Rally Trial at Tails U Win!",
         htmlDescription: `
             <p>The German Shepherd Club of Greater New Haven is hosting an Obedience and Rally Trial
-                at Tails You Win!</p>
+                at Tails U Win!</p>
                 <p>Entries Open May 30 2025</p>
                 <p>Entries Close 12PM Wed July 2 2025</p>
         `,

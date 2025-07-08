@@ -35,10 +35,7 @@ export default function OfficersPage() {
     },
     {
       name: "Nancy Vaught"
-    },
-    {
-      name: "Mark Cook"
-    },
+    }
   ]
 
   const committees = [

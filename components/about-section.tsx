@@ -9,7 +9,7 @@ export function AboutSection() {
         <div className="text-center mb-12">
           <h2 className="text-4xl font-bold text-white mb-4">About Our Club</h2>
           <p className="text-xl text-chrome-100 max-w-3xl mx-auto">
-            The German Shepherd Dog Club of Greater New Hampshire has been serving the community for over 40 years,
+            The German Shepherd Dog Club of Greater New Haven has been serving the community for over 40 years,
             promoting responsible ownership and the betterment of the breed.
           </p>
         </div>
@@ -34,7 +34,7 @@ export function AboutSection() {
             </CardHeader>
             <CardContent className="text-chrome-300">
               <p>
-                Founded in 1983, our club has grown from a small group of enthusiasts to a thriving community. We host
+                Founded in 1960, our club has grown from a small group of enthusiasts to a thriving community. We host
                 regular meetings, training events, and competitions while maintaining our commitment to breed education
                 and responsible ownership.
               </p>

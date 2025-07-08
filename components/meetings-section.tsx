@@ -5,20 +5,12 @@ export function MeetingsSection() {
   const meetings = [
     {
       title: "Monthly General Meeting",
-      date: "First Tuesday of each month",
+      date: "Second Friday of each month",
       time: "7:00 PM",
-      location: "Online via Zoom",
+      location: "Online via Teams",
       description:
         "Join us for our monthly club meeting to discuss upcoming events, training opportunities, and club business.",
-    },
-    {
-      title: "Training Workshop",
-      date: "Third Saturday of each month",
-      time: "10:00 AM - 2:00 PM",
-      location: "Rented Training Facility",
-      description:
-        "Hands-on training sessions covering obedience, agility, and specialized German Shepherd training techniques.",
-    },
+    }
   ]
 
   return (
@@ -31,7 +23,7 @@ export function MeetingsSection() {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-8">
+        <div className="grid grid-cols-1 gap-8">
           {meetings.map((meeting, index) => (
             <Card key={index} className="bg-chrome-800 border-chrome-600">
               <CardHeader>

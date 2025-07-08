@@ -152,7 +152,7 @@ export default function ContactPage() {
                                     </CardTitle>
                                 </CardHeader>
                                 <CardContent>
-                                    <p className="text-gray-600">xx@xx.org</p>
+                                    <a className="text-gray-600" href="mailto:CherLynGSD@gmail.com">CherLynGSD@gmail.com</a>
                                     <p className="text-sm text-gray-500 mt-2">We typically respond to emails within 24-48 hours.</p>
                                 </CardContent>
                             </Card>
@@ -165,7 +165,7 @@ export default function ContactPage() {
                                     </CardTitle>
                                 </CardHeader>
                                 <CardContent>
-                                    <p className="text-gray-600">(xxx) xxx-xxxx</p>
+                                    <a href="tel:203-395-8473" className="text-gray-600">203-395-8GSD (473)</a>
                                     <p className="text-sm text-gray-500 mt-2">
                                         Please leave a voicemail if we don&apos;t answer - we&apos;ll call you back!
                                     </p>

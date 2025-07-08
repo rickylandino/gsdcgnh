@@ -1,5 +1,6 @@
 import Link from "next/link"
 import Image from "next/image"
+import { navigation } from "@/lib/navigation"
 
 export default function Footer() {
   return (
@@ -24,7 +25,14 @@ export default function Footer() {
           <div>
             <h3 className="font-semibold text-lg mb-4 text-white">Quick Links</h3>
             <ul className="space-y-2 text-sm">
-              <li>
+                {navigation.map((item) => (
+              <li key={item.name}>
+                <Link href={item.href} className="text-gray-300 hover:text-white transition-colors">
+                  {item.name}
+                </Link>
+              </li>
+            ))}
+              {/* <li>
                 <Link href="/about" className="text-gray-300 hover:text-white transition-colors">
                   About Us
                 </Link>
@@ -43,7 +51,7 @@ export default function Footer() {
                 <Link href="/contact" className="text-gray-300 hover:text-white transition-colors">
                   Contact Us
                 </Link>
-              </li>
+              </li> */}
             </ul>
           </div>
 

@@ -1,33 +1,33 @@
 interface EventPhoto {
-  id: string
-  src: string
-  alt: string
-  caption?: string
+    id: string
+    src: string
+    alt: string
+    caption?: string
 }
 
 interface EventDocument {
-  id: string
-  title: string
-  type: "premium-list" | "entry-form" | "results" | "flyer" | "info" | "photos"
-  url: string
-  size?: string
+    id: string
+    title: string
+    type: "premium-list" | "entry-form" | "results" | "flyer" | "info" | "photos" | ""
+    url: string
+    size?: string
 }
 
 interface Event {
-  id: string
-  title: string
-  date: string
-  time: string
-  location: string
-  category: "trial" | "seminar" | "conformation" | "obedience"
-  description: string
-  htmlDescription?: string
-  registrationRequired: boolean
-  hasDocuments: boolean
-  results?: string
-  photos?: EventPhoto[]
-  documents?: EventDocument[]
-  hideDay?: boolean
+    id: string
+    title: string
+    date: string
+    time: string
+    location: string
+    category: "trial" | "seminar" | "conformation" | "obedience" | "test"
+    description: string
+    htmlDescription?: string
+    registrationRequired: boolean
+    hasDocuments: boolean
+    results?: string
+    photos?: EventPhoto[]
+    documents?: EventDocument[]
+    hideDay?: boolean
 }
 
 const events: Event[] = [
@@ -89,6 +89,99 @@ const events: Event[] = [
             }
         ]
     },
+    {
+        id: "3",
+        title: "GSDCA Temperament Test, CGC, CGCA, Trick Dog Novice, Fit Dog Walk, Annual Picnic",
+        date: "2025-06-15",
+        time: "",
+        location: "HOP BROOK LAKE - Meadows Shelter\n4 Straits Turnpike, Middlebury, CT\nRT 8 Exit 28 towards CT 63N/Church Street",
+        category: "test",
+        description: "",
+        htmlDescription: `<div style="max-width:800px; margin:0 auto; text-align:center; padding:20px;">
+    <section>
+      <h2>GSDCA Temperament Test</h2>
+      <p>Cost: $30.00 1st dog, $25.00 2nd dog</p>
+      <p>Minimum Age: 1 year on the day of the test</p>
+      <p>Sr Evaluator: Linda Chernak</p>
+      <p>All breeds and mixed breeds welcomed</p>
+      <p>Females in heat will be tested last</p>
+      <p>Schedule: Demo Dog at 10:00 AM, Testing begins at 10:30 AM</p>
+    </section>
+
+    <section>
+      <h2>AKC Canine Good Citizen Test / Community Canine</h2>
+      <p>Cost: $25.00 1st dog, $20.00 2nd dog</p>
+      <p>Evaluator: Karla Trombetto</p>
+    </section>
+
+    <section>
+      <h2>AKC FIT DOG WALK</h2>
+      <p>Cost: Free to all participants</p>
+    </section>
+
+    <section>
+      <h2>AKC Trick Dog - Novice Level Only</h2>
+      <p>Cost: $25.00 1st dog, $20.00 2nd dog</p>
+      <p>Evaluator: Laura Chernak</p>
+    </section>
+
+    <section>
+      <h2>Entry Information</h2>
+      <p>Deadline: Saturday, June 07, 2025</p>
+      <p>No entries will be taken on the day of the event.</p>
+      <p>The site is located on federal grounds. Payment must be made in advance as money exchange is not allowed on-site.</p>
+    </section>
+
+    <section>
+      <h2>Picnic Details</h2>
+      <p>Morning refreshments: Coffee, donuts, and Danish will be available</p>
+      <p>Provided by club: Hot dogs, hamburgers, soda, and water</p>
+      <p>Salads and desserts: Provided by members</p>
+      <p>If you're not a member and would like to bring something, please contact Karla Trombetto for food donations and party headcount.</p>
+      <p>Email: <a href="mailto:ktrombetto@hotmail.com">ktrombetto@hotmail.com</a></p>
+    </section>
+
+    <section>
+      <h2>Entries Submission</h2>
+      <p>Use a separate form for each dog.</p>
+      <p>Checks payable to: GSDCGNH, Inc</p>
+      <p>Mail to:</p>
+      <address>
+        Temperament Test / CGC / Trick Dog<br>
+        115 Vought Place<br>
+        Stratford, CT 06614
+      </address>
+      <p>FMI: (203) 395-8473</p>
+    </section>
+  </div>
+`,
+        registrationRequired: false,
+        hasDocuments: true,
+        documents: [
+            {
+                id: "doc-2",
+                title: "2025 GSDCA TEMPERAMENT TEST-AKC CGC-AKC TDN Flyer",
+                type: "",
+                url: "/documents/2025-GSDCA TEMPERAMENT TEST-AKC CGC-AKC TDN Flyer-3.pdf",
+                size: "108 KB",
+            },
+            {
+                id: "doc-1",
+                title: "2025 GSDCA TEMPERAMENT TEST CGC CGCA Trick Dog ENTRY FORM",
+                type: "",
+                url: "/documents/2025-GSDCA- TEMPERAMENT TEST -CGC -CGCA- Trick Dog ENTRY -FORM-10.pdf",
+                size: "103 KB",
+            }
+        ],
+        photos: [
+            {
+                id: "1",
+                src: "/events/2025/temperament_test.jpg",
+                alt: "GSDCA Temperament Test Event"
+            }
+        ]
+
+    }
     // {
     //     id: "3",
     //     title: "Monthly Meeting",

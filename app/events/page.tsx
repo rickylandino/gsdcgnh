@@ -17,12 +17,14 @@ import {
 } from "lucide-react"
 import PhotoGallery from "@/components/photo-gallery"
 import { pastEvents, upcomingEvents, Event as EventType } from "./events"
+import Image from "next/image"
 
 const categoryColors = {
   trial: "bg-green-100 text-green-800",
   seminar: "bg-purple-100 text-purple-800",
   conformation: "bg-orange-100 text-orange-800",
   obedience: "bg-red-100 text-red-800",
+  test: "bg-blue-200 text-blue-800",
 }
 
 const categoryLabels = {
@@ -30,6 +32,7 @@ const categoryLabels = {
   seminar: "Seminar",
   conformation: "Conformation",
   obedience: "Obedience & Rally",
+  test: "Temperament Test",
 }
 
 const documentTypeLabels = {
@@ -39,6 +42,7 @@ const documentTypeLabels = {
   flyer: "Flyer",
   info: "Information",
   photos: "Photos",
+  "": "Document",
 }
 
 const documentTypeIcons = {
@@ -48,6 +52,7 @@ const documentTypeIcons = {
   flyer: ImageIcon,
   info: FileText,
   photos: ImageIcon,
+  "": FileText,
 }
 
 const today = new Date()
@@ -179,10 +184,12 @@ export default function EventsPage() {
                 <Calendar className="h-4 w-4" />
                 <span>{formatDate(event.date, event.hideDay)}</span>
               </div>
+              {event.time &&
               <div className="flex items-center gap-2">
                 <Clock className="h-4 w-4" />
                 <span>{event.time}</span>
               </div>
+            }
               <div className="flex items-center gap-2">
                 <MapPin className="h-4 w-4" />
                 <span>{event.location}</span>
@@ -192,7 +199,14 @@ export default function EventsPage() {
         </div>
       </CardHeader>
       <CardContent>
-        {/* HTML Description */}
+        {(event.photos?.length ?? 0) > 0 &&
+            <img
+                src={event.photos![0].src || "/placeholder.svg"}
+                alt={event.photos![0].alt || "Event photo"}
+                
+                className="mx-auto pb-3"
+            />
+        }
         {event.htmlDescription ? (
           <div
             className="text-gray-600 mb-4 prose prose-sm max-w-none"
@@ -215,7 +229,7 @@ export default function EventsPage() {
         )}
 
         {/* Photos Section */}
-        {event.photos && event.photos.length > 0 && (
+        {event.photos && event.photos.length > 1 && (
           <div className="mb-4">
             <Dialog>
               <DialogTrigger asChild>
@@ -238,7 +252,7 @@ export default function EventsPage() {
         {event.documents && event.documents.length > 0 && (
           <div className="mb-4">
             <h4 className="font-medium text-gray-900 mb-3">Documents & Downloads</h4>
-            <div className="grid sm:grid-cols-2 gap-2">
+            <div className="grid grid-cols-1 gap-2">
               {event.documents.map((doc) => {
                 const IconComponent = documentTypeIcons[doc.type]
                 return (

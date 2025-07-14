@@ -81,7 +81,7 @@ export default function PhotoGallery({ photos, title, columns = 3 }: PhotoGaller
                                     src={photo.src || "/placeholder.svg"}
                                     alt={photo.alt}
                                     fill
-                                    className="object-cover hover:scale-105 transition-transform duration-300"
+                                    className="transition-transform duration-300"
                                 />
                             </div>
                             {photo.caption && (

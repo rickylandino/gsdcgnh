@@ -19,7 +19,7 @@ interface Event {
     date: string
     time: string
     location: string
-    category: "trial" | "seminar" | "conformation" | "obedience" | "test"
+    category: "trial" | "seminar" | "conformation" | "obedience" | "test" | "akcfitdog" | "other"
     description: string
     htmlDescription?: string
     registrationRequired: boolean
@@ -180,25 +180,118 @@ const events: Event[] = [
                 alt: "GSDCA Temperament Test Event"
             }
         ]
-
-    }
-    // {
-    //     id: "3",
-    //     title: "Monthly Meeting",
-    //     date: "2025-06-13",
-    //     time: "7:00 PM - 9:00 PM",
-    //     location: "Virtual",
-    //     category: "meeting",
-    //     description:
-    //         "GERMAN SHEPHERD DOG CLUB OF GREATER NEW HAVEN MEETING NOTICE",
-    //     htmlDescription: `
-    //         <p>Board Meeting 7:00 to 7:30</p>
-    //             <p>General Meeting 7:30 to 9:00</p>
-
-    //     `,
-    //     registrationRequired: false,
-    //     hasDocuments: false,
-    // }
+    },
+    {
+        id: "4",
+        title: "Akc fit dog 5k spring scurry",
+        date: "2025-04-15",
+        time: "",
+        location: "",
+        category: "akcfitdog",
+        description:
+            "",
+        htmlDescription: `
+            <p>We had a great time at the Spring Scurry. Here are some pics.</p>
+                <p>Look for future AKC Fit Dog events</p>
+        `,
+        registrationRequired: false,
+        hasDocuments: false,
+        photos: [
+            {
+                id: "1",
+                src: "/events/4/1000008674.jpg",
+                alt: "1",
+            },
+            {
+                id: "2",
+                src: "/events/4/1000008679.jpg",
+                alt: "2",
+            },
+            {
+                id: "3",
+                src: "/events/4/resized.jpg",
+                alt: "3",
+            },
+        ],
+    },
+    {
+        id: "5",
+        title: "GSDCGNH is now an approved AKC Fit Dog Club",
+        date: "2024-12-11",
+        time: "",
+        location: "",
+        category: "akcfitdog",
+        description:
+            "",
+        htmlDescription: `
+            <p style="padding-bottom: 10px">An AKC FIT DOG Club is a local group of dog owners who meet to work on fitness goals with their dogs. The American Kennel Club (AKC) launched the AKC FIT DOG program in 2018 to encourage people and their dogs to be more active together.</p>
+            <p style="padding-bottom: 10px">To become an AKC FIT DOG Club, a group must:</p>
+            <ul class="list-disc pl-10">
+                <li>Be an AKC club, independent dog training school, or other dog-related club or organization</li>
+                <li>Complete the online FIT DOG Club Application</li>
+                <li>Conduct at least four group fitness walks per year or regularly scheduled canine fitness classes</li>
+            </ul>
+            <p style="padding-bottom: 10px">The goal of AKC FIT DOG clubs is to promote the health and fitness of dogs and their owners. Clubs host a variety of events, including: Community runs, Club walks, and FIT DOG classes.</p>
+            <p style="padding-bottom: 10px">The AKC FIT DOG program also offers a way for dog owners to earn titles for their dogs by completing structured activities. There are three levels of titles: Bronze, Silver, and Gold. To earn a title, dogs must earn points in at least six fitness categories, such as:</p>
+            <ul>
+                <li>AKC Course</li>
+                <li>Community runs</li>
+                <li>Walks and hikes</li>
+                <li>Unique activities, such as parkour or swimming</li>
+                <li>Fitness-related AKC Performance Titles, such as Agility, Diving Dogs, Fast CAT, or Obedience</li>
+            </ul>
+        `,
+        registrationRequired: false,
+        hasDocuments: false,
+        photos: [
+            {
+                id: "1",
+                src: "/events/5/fit_dog_banner.jpg",
+                alt: "1",
+            }
+        ],
+    },
+    {
+        id: "6",
+        title: "AKC Fit Dog 5k Spring Scurry",
+        date: "2025-04-13",
+        time: "11:00 AM",
+        location: "Fairfield Hills Campus, Newtown CT",
+        category: "akcfitdog",
+        description:
+            "",
+        htmlDescription: `
+            <p style="padding-bottom: 10px"><strong>AKC FIT DOG 5K SPRING SCURRY (3.1miles)</strong></p>
+            <p style="padding-bottom: 10px">Registration fee $25</p>
+            <p style="padding-bottom: 10px">Registration includes a 3 inch laminated medal and signed documentation form to be used towards your AKC Fit Dog Title. This is not a timed event you may walk at your own pace and rest when needed. This is a public location where other people and dogs not associated with our event will be present. Please be cautious and courteous of others at all times.​</p>
+            <p style="padding-bottom: 10px">Please see attachment for Registration Form and Event Flyer.</p>
+        `,
+        registrationRequired: false,
+        hasDocuments: true,
+        documents: [
+            {
+                id: "doc-2",
+                title: "Spring Scurry-3-1.pdf",
+                type: "",
+                url: "/events/6/Spring Scurry-3-1.pdf",
+                size: "84.4 KB",
+            },
+            {
+                id: "doc-1",
+                title: "FIT DOG SPRING SCURRY REGISTRATION (1)-2-3.pdf",
+                type: "",
+                url: "/events/6/FIT DOG SPRING SCURRY REGISTRATION (1)-2-3.pdf",
+                size: "57.3 KB",
+            }
+        ],
+        photos: [
+            {
+                id: "1",
+                src: "/events/6/spring_scurry_1.png",
+                alt: "1",
+            }
+        ],
+    },
 ]
 
 const today = new Date()

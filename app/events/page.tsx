@@ -15,7 +15,6 @@ import {
     ImageIcon,
     FileText,
 } from "lucide-react"
-import PhotoGallery from "@/components/photo-gallery"
 import { pastEvents, upcomingEvents, Event as EventType } from "./events"
 
 const categoryColors = {

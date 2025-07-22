@@ -70,32 +70,32 @@ export default function HomePage() {
                         photos={[
                             {
                                 id: "1",
-                                src: "/images/5k_spring_1.jpg",
+                                src: "/events/2025/temp_test/1.jpg",
                                 alt: "Spring 5K event"
                             },
                             {
                                 id: "2",
-                                src: "/images/2023_awards_1.jpg",
+                                src: "/events/2025/temp_test/2.jpg",
                                 alt: "2023 Awards Ceremony 1"
                             },
                             {
                                 id: "3",
-                                src: "/images/dog_cpr_1.jpg",
+                                src: "/events/2025/temp_test/3.jpg",
                                 alt: "Pet CPR training session"
                             },
                             {
                                 id: "4",
-                                src: "/images/good_citizen_1.jpg",
-                                alt: "Tempermant and Good Citizen testing",
+                                src: "/events/2025/temp_test/4.jpg",
+                                alt: "Temperament and Good Citizen testing",
                             },
                             {
                                 id: "5",
-                                src: "/images/obedience_and_rally_1.jpg",
+                                src: "/events/2025/temp_test/7.jpg",
                                 alt: "Obedience and Rally Training",
                             },
                             {
                                 id: "6",
-                                src: "/images/scent_1.jpg",
+                                src: "/events/2025/temp_test/6.jpg",
                                 alt: "Scentwork Training",
                             },
                         ]}

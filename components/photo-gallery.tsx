@@ -136,7 +136,7 @@ export default function PhotoGallery({ photos, title, columns = 3 }: PhotoGaller
                                 src={selectedPhoto.src || "/placeholder.svg"}
                                 alt={selectedPhoto.alt}
                                 width={800}
-                                height={600}
+                                height={800}
                                 className="max-w-full max-h-[80vh] object-contain"
                             />
                             {selectedPhoto.caption && (

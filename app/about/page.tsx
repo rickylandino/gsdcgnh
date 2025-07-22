@@ -178,17 +178,17 @@ export default function AboutPage() {
                         photos={[
                             {
                                 id: "1",
-                                src: "/images/obedience_trial_2021_1.jpg",
+                                src: "/events/2025/temp_test/8.jpg",
                                 alt: "Obedience Trial 2021"
                             },
                             {
                                 id: "2",
-                                src: "/images/obedience_trial_2021_2.jpg",
+                                src: "/events/2025/temp_test/9.jpg",
                                 alt: "Obedience Trial 2021 x2",
                             },
                             {
                                 id: "3",
-                                src: "/images/futurity_1.png",
+                                src: "/events/2025/temp_test/10.jpg",
                                 alt: "Futurity",
                             }
                         ]}

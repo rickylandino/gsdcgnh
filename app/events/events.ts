@@ -292,6 +292,239 @@ const events: Event[] = [
             }
         ],
     },
+    {
+        id: "7",
+        title: "3rd Annual October Scent Work Premium List",
+        date: "2025-10-11",
+        time: "",
+        location: "750 Chase Parkway, Waterbury, CT 06708",
+        category: "trial",
+        description: "",
+        htmlDescription: `
+            <p><strong>The German Shepherd Dog Club of Greater New Haven is holding its 3rd Annual October Scent Work Trial!</strong></p>
+            <br />
+            <p><strong>Dates:</strong> October 11, 2025 and October 12, 2025</p>
+            <p><strong>Location:</strong> Connecticut State Community College Naugatuck Valley<br>
+                750 Chase Parkway, Waterbury, CT 06708</p>
+            <br />
+            <ul>
+                <li><strong>Entries open:</strong> July 30, 2025 at 6:00am EST</li>
+                <li><strong>Entries close:</strong> September 12, 2025 at 6:00pm EST</li>
+            </ul>
+            <br />
+            <div class="text-center">
+            <strong>
+                <p>DETECTIVE</p>
+                <p>NOVICE, ADVANCED, EXCELLENT, and MASTER ELEMENTS</p>
+                <p>HANDLER DISCRIMINATION</p>
+            </strong>
+            </div>
+
+            <p><i>Premium list is available below</i></p>
+        `,
+        registrationRequired: false,
+        hasDocuments: true,
+        documents: [
+            {
+                id: "doc-1",
+                title: "3rd Annual October Scent Work Premium List",
+                type: "premium-list",
+                url: "/documents/10-2025-Scent_Work_Premium_List.pdf",
+                size: "1.07 MB",
+            }
+        ],
+        photos: [
+            {
+                id: "1",
+                src: "/events/7/image_547.jpg",
+                alt: "Scent Work Trial"
+            }
+        ]
+    },
+    {
+        id: "8",
+        title: "2nd Annual Spring Scent Work Trial",
+        date: "2025-05-31",
+        time: "",
+        location: "800 Country Club Road, Waterbury, CT 06723",
+        category: "trial",
+        description: "",
+        htmlDescription: `
+            <p><strong>2nd Annual Spring Scent Work Trial</strong></p>
+            <br />
+            <p><strong>Trial Hours:</strong> Saturday May 31st & Sunday June 1st - 7:30 am to 5:00 pm</p>
+            <p><strong>Location:</strong> Post University<br>
+                800 Country Club Road, Waterbury, CT 06723</p>            
+            <br />
+            <p><strong>Note:</strong> Judging schedules may be adjusted due to weather conditions and or entries. All competitors should plan accordingly.</p>
+
+            <p><i>Premium list is available below</i></p>
+        `,
+        registrationRequired: false,
+        hasDocuments: true,
+        documents: [
+            {
+                id: "doc-1",
+                title: "2rd Annual October Scent Work Premium List",
+                type: "premium-list",
+                url: "/events/8/06-2025-Scent_Work_Premium_List_.pdf",
+                size: "1.4 MB",
+            }
+        ],
+        photos: [
+            {
+                id: "1",
+                src: "/events/8/molly5.png",
+                alt: "Scent Work Trial"
+            }
+        ]
+    },
+    {
+        id: "9",
+        title: "Scent work Trial, Waterbury",
+        date: "2024-10-11",
+        time: "",
+        location: "750 Chase Parkway, Waterbury, CT 06708",
+        category: "trial",
+        description: "",
+        htmlDescription: `
+            <p>We&apos;re working hard to organize our 3rd club Scent Work Trial.</p>
+            <br />
+            <p><strong>Dates:</strong> October 11, 2024 - October 13, 2024</p>
+            <p><strong>Trial Hours:</strong> Saturday and Sunday - 7:30 am to 5:00 pm</p>
+             <p><strong>Location:</strong> Connecticut State Community College Naugatuck Valley<br>
+                750 Chase Parkway, Waterbury, CT 06708</p>            
+            <br />
+            <p>Check-in from 7:30-8:30 am daily. Handlers&apos; Briefing at 8:30 am, first dog to follow.</p>
+            <br />
+            <p><strong>Note:</strong> Judging schedules may be adjusted due to weather conditions and or entries. All competitors should plan accordingly.</p>
+
+            <p><i>Premium list is available below</i></p>
+        `,
+        registrationRequired: false,
+        hasDocuments: true,
+        documents: [
+            {
+                id: "doc-1",
+                title: "October Scent Work Premium List",
+                type: "premium-list",
+                url: "/events/9/10-2024-V2-Scent_Work_Premium_List_.pdf",
+                size: "1.3 MB",
+            }
+        ],
+        photos: [
+            {
+                id: "1",
+                src: "/events/9/ScentWork.jpg",
+                alt: "Scent Work Trial"
+            }
+        ]
+    },
+    {
+        id: "10",
+        title: "Summer Scent Work Trial",
+        date: "2024-06-01",
+        time: "",
+        location: "Terryville, CT",
+        category: "trial",
+        description: "",
+        htmlDescription: `
+            <p><strong>The German Shepherd Dog Club of Greater New Haven will hold a Scent Trial on June 1st & 2nd, 2024</strong></p>
+            <br />
+            <p><strong>Trial Hours:</strong> June 1st & 2nd - 8:00 am to 4:00 pm</p>
+            <p><strong>Location:</strong> Terryville, CT</p>            
+            <br />
+            <p>Join us for our second club Scent Work trial this summer in Terryville, CT. More details coming soon.</p>
+
+            <p><i>Premium list is available below</i></p>
+        `,
+        registrationRequired: false,
+        hasDocuments: true,
+        documents: [
+            {
+                id: "doc-1",
+                title: "June Scent Work Premium List",
+                type: "premium-list",
+                url: "/events/10/06-2024-Scent_Work_Premium_List_.pdf",
+                size: "1.5 MB",
+            }
+        ],
+        photos: [
+            {
+                id: "1",
+                src: "/events/10/ScentWork.jpg",
+                alt: "Scent Work Trial"
+            }
+        ]
+    },
+    {
+        id: "11",
+        title: "GSDCGNH Scent Work Trial",
+        date: "2023-10-14",
+        time: "",
+        location: "Terryville, CT",
+        category: "trial",
+        description: "",
+        htmlDescription: `
+            <p><strong>The German Shepherd Dog Club of Greater New Haven will hold its very first Scent Trial on October 14th-15th, 2023.</strong></p>
+            <br />
+            <p><strong>Dates:</strong> October 14, 2023 - October 15, 2023</p>
+            <p><strong>Location:</strong> Connecticut State Community College Naugatuck Valley<br>
+                750 Chase Parkway, Waterbury, CT 06708</p>           
+            <br />
+
+            <p><i>Premium list is available below</i></p>
+        `,
+        registrationRequired: false,
+        hasDocuments: true,
+        documents: [
+            {
+                id: "doc-1",
+                title: "Scent Work Premium List",
+                type: "premium-list",
+                url: "/events/11/06-2025-Scent_Work_Premium_List_.pdf",
+                size: "1.4 MB",
+            }
+        ]
+    },
+    {
+        id: "12",
+        title: "Albany Obedience Club Scent Work Trial",
+        date: "2023-05-13",
+        time: "",
+        location: "Hudson, NY",
+        category: "trial",
+        description: "",
+        htmlDescription: `
+            <p>Novice, Advanced, Excellent, and Master Elements Trials, including Handler Discrimination</p>
+            <br />
+            <p>Saturday May 13, 2023 & Sunday May 14, 2023</p>
+            <br />
+            <p>Event #2023175201 Event #2023175202</p>
+            <p><strong>Location:</strong> FASNY Museum of Firefighting<br>
+                117 Harry Howard Avenue, Hudson, NY 12534<br />
+                To be held Indoors and Outdoors</p>           
+            <br />
+            <p><strong>Trial Hours:</strong> Saturday and Sunday - 7:30am to 6:00pm</p>
+            <p>Check-in will be held from 7:30-8:30 am daily.</p>
+            <p>General Briefing at 8:30am, first dog to follow.</p>
+            <br />
+            <p><strong>Note:</strong> Judging schedules may be adjusted due to weather conditions and or entries. All competitors should plan accordingly.</p>
+
+            <p><i>Premium list is available below</i></p>
+        `,
+        registrationRequired: false,
+        hasDocuments: true,
+        documents: [
+            {
+                id: "doc-1",
+                title: "Scent Work Premium List",
+                type: "premium-list",
+                url: "/events/11/06-2025-Scent_Work_Premium_List_.pdf",
+                size: "523 KB",
+            }
+        ]
+    }
 ]
 
 const today = new Date()

@@ -5,5 +5,6 @@ export const navigation = [
     { name: "Meetings", href: "/meetings" },
     { name: "Events", href: "/events" },
     { name: "Membership", href: "/membership" },
+    { name: "Breeders", href: "/breeders" },
     { name: "Contact", href: "/contact" },
   ]

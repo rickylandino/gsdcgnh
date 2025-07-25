@@ -1,5 +1,6 @@
 import { Card, CardContent, CardDescription } from "@/components/ui/card"
 import PhotoGallery from "@/components/photo-gallery"
+import Link from "next/link"
 
 export default function AboutPage() {
     return (
@@ -37,7 +38,15 @@ export default function AboutPage() {
                         <Card className="text-center">
                             <CardContent>
                                 <CardDescription>
-                                    To urge members and breeders to accept the Standard of the Breed as approved by the American Kennel Club as the only Standard of excellence by which German Shepherd Dogs shall be judged.
+                                    To urge members and breeders to accept the Standard of the Breed as approved by the American Kennel Club as the only {" "}
+                                    <Link
+                                        href="/German Shepherd Dog Breed Standard.pdf"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        className="text-blue-600 underline hover:text-blue-800">
+                                            Standard
+                                    </Link> {" "}
+                                    of excellence by which German Shepherd Dogs shall be judged.{" "}
                                 </CardDescription>
                             </CardContent>
                         </Card>

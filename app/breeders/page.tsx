@@ -107,15 +107,15 @@ export default function BreedersPage() {
   ]
 
   return (
-    <div className="min-h-screen bg-chrome-900">
+    <div className="min-h-screen bg-gray-50">
       <div className="py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <h1 className="text-4xl font-bold text-white mb-4">Breeders Page</h1>
+            <h1 className="text-4xl font-bold text-gray-900 mb-4">Breeders</h1>
           </div>
 
-          <div className="bg-chrome-800 border border-chrome-600 rounded-lg p-8 mb-12 shadow-lg">
-            <p className="text-chrome-300 mb-4">
+          <div className="bg-chrome-200 rounded-lg p-8 mb-12 shadow-lg">
+            <p className="text-gray-900 mb-4">
               The GSDC/GNH Inc. offers this listing of club members who breed German Shepherds. The club encourages our
               members to breed responsibly and to adhere to the{" "}
                 Breeders Code of Ethics
@@ -126,14 +126,14 @@ export default function BreedersPage() {
               responsibility of the potential buyer to assure themselves that the breeder adheres to high standards of
               ethics.
             </p>
-            <p className="text-chrome-300 mb-4">
+            <p className="text-gray-900 mb-4">
               The German Shepherd Dog Club is a diverse group of people involved with the breeding, raising, exhibiting,
               training, promoting and loving the German Shepherd Dog. Most of us are dedicated to the betterment of our
               breed and adhere to a high standard of ethics. Many are signers of the &quot;Breeders Code of Ethics&quot;.
             </p>
-            <p className="text-chrome-300">
+            <p className="text-gray-900">
               For news about upcoming litters, please visit our{" "}
-              <Link href="/breeding-news" className="text-chrome-200 hover:underline">
+              <Link href="/breeding-news" className="text-gray-900 hover:underline">
                 Breeding News
               </Link>
               .

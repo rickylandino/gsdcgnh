@@ -946,6 +946,482 @@ const events: Event[] = [
             }
         ]
     },
+    {
+        id: "22",
+        title: "GSDCA Temperament Test, CGC, CGCA, Trick Dog and Annual Picnic",
+        date: "2024-06-30",
+        time: "",
+        location: "Naugatuck, CT",
+        category: "test",
+        description: "",
+        htmlDescription: `
+            <p><strong>Join us for a Temperament and/or Canine Good Citizen / Trick Dog test followed by our annual Club Picnic at Hop Brook Park, Naugatuck CT.</strong></p>
+
+  <p><strong>GSDCA TEMPERAMENT TEST - AKC CANINE GOOD CITIZEN TEST / AKC COMMUNITY CANINE - AKC TRICK DOG NOVICE</strong><br>
+  <strong>ANNUAL CLUB PICNIC</strong><br>
+  <strong>ALL EXHIBITORS WELCOMED</strong></p>
+
+  <p><strong>Date:</strong> Sunday June 30, 2024 RAIN OR SHINE</p>
+
+  <p><strong>Location:</strong> HOP BROOK LAKE - Meadows Shelter<br>
+  RT 8 Exit 28 towards CT 63N/Church Street, Naugatuck, CT</p>
+
+  <p><strong>GSDCA Temperament Test … $30. 1st dog, $25. 2nd dog</strong><br>
+  Min. age … 1 yr on the day of the test<br>
+  GSDCA Sr. Evaluator: Linda Chernak<br>
+  ALL BREEDS / MIXED BREEDS WELCOMED - Females in heat tested last</p>
+
+  <p>Demo dog at 10:00 AM ALL testing will begin at 10:30 AM</p>
+
+  <p><strong>AKC Canine Good Citizen Test / Community Canine…</strong><br>
+  $20. 1st dog, $10. 2nd dog<br>
+  AKC Evaluator: Stefanie Mount</p>
+
+  <p><strong>Entries - Close Saturday June 22, 2024</strong><br>
+  No entries will be taken that day</p>
+
+  <p>The site is located on Federal grounds, they do not allow the exchange of money.</p>
+
+  <p>Coffee - Donuts - Danish available in the morning.</p>
+
+  <p>The club will provide the hot dogs and hamburgers, soda and water.</p>
+
+  <p>Salads and desserts will be provided by the membership.</p>
+
+  <p>If you are not a member and would like to bring something, please contact Karla below.<br>
+  Please contact Karla Trombetto with all food donations and number in party.<br>
+  <a href="mailto:ktrombetto@hotmail.com" style="color: #0000ee;">ktrombetto@hotmail.com</a></p>
+
+  <p><strong>Entries</strong><br>
+  Use a separate form for each dog.<br>
+  Make checks payable to: GSDCGNH, Inc.<br>
+  Mail to: Temperament Test / CGC / Trick Dog<br>
+  115 Vought Place, Stratford, CT 06614<br>
+  FMI (203) 395-8473</p>
+
+
+        `,
+        registrationRequired: false,
+        hasDocuments: true,
+        documents: [
+            {
+                id: "doc-1",
+                title: "2024-GSDCA- Entry Form-TEMPERAMENT TEST",
+                type: "premium-list",
+                url: "/events/22/2024-GSDCA- Entry Form-TEMPERAMENT TEST -CGC -CGCA- Trick Dog ENTRY -FORM.pdf",
+                size: "106 KB",
+            }
+        ],
+        photos: [
+            {
+                id: "1",
+                src: "/events/22/Temperament.jpg",
+                alt: "2025 GSDCA Temperament Test"
+            }
+        ]
+    },
+    {
+        id: "23",
+        title: "Temperament Test, Canine Good Citizen & Annual Picnic",
+        date: "2024-06-25",
+        time: "",
+        location: "Naugatuck, CT",
+        category: "test",
+        description: "",
+        htmlDescription: `
+            <p><strong>The German Shepherd Dog Club of Greater New Haven, Inc</strong></p>
+  <p>is hosting</p>
+  <p><strong>GSDCA TEMPERAMENT TEST and AKC CANINE GOOD CITIZEN TEST / AKC COMMUNITY CANINE and our ANNUAL CLUB PICNIC</strong></p>
+  <p style="color: purple;"><strong>ALL EXHIBITORS WELCOMED</strong></p>
+
+  <p><strong>Date:</strong> Sunday June 25, 2023 RAIN OR SHINE</p>
+  <p><strong>Location:</strong> HOP BROOK LAKE - Meadows Shelter</p>
+  <p><strong>Address:</strong> 4 Straits Turnpike (Route 63), Middlebury CT</p>
+  <p><strong>Directions:</strong> RT 8 Exit 28 towards CT 63N / Church Street, Naugatuck, CT</p>
+
+  <p><strong>GSDCA Temperament Test</strong> ... $30. 1st dog, $25. 2nd dog</p>
+  <p>Minimum age … 1 yr on the day of the test</p>
+  <p><strong>GSDCA Sr. Evaluator:</strong> Linda Chernak</p>
+
+  <p><strong>AKC Canine Good Citizen Test / Community Canine</strong> $20.00 1st dog, $10.00 2nd dog</p>
+  <p><strong>AKC Evaluator:</strong> Stefanie Mount</p>
+
+  <p><strong>ALL BREEDS / MIXED BREEDS WELCOMED</strong></p>
+  <p>Females in heat will be tested last</p>
+  <p>Demo dog at 10:00 AM Testing will begin at 10:30 AM</p>
+
+  <p><strong>Entries - Close Saturday June 17, 2023.</strong><br>
+     No entries taken that day. The site is located on Federal grounds, they do not allow the exchange of money.</p>
+
+  <p>Coffee - Donuts - Danish available</p>
+  <p>The club will provide the hot dogs and hamburgers, soda and water.</p>
+  <p>Salads and desserts will be provided by the membership.</p>
+
+  <p>If you are not a member and would like to bring something, please contact 
+     <a href="mailto:ktrombetto@hotmail.com" style="color: blue;">Karla Trombetto</a> 
+     with all food donations and number in party.</p>
+
+  <p><strong>Entries:</strong><br>
+     Use a separate form for each dog and each test.<br>
+     Make checks payable to: GSDCGNH, Inc.</p>
+
+  <p><strong>Mail to:</strong><br>
+     Temperament Test / CGC<br>
+     115 Vought Place, Stratford, CT 06614<br>
+     For More Information: (203) 395-8473</p>
+        `,
+        registrationRequired: false,
+        hasDocuments: true,
+        documents: [
+            {
+                id: "doc-1",
+                title: "2023-GSDCA TEMPERAMENT TEST and AKC CANINE GOOD CITIZEN TEST Flyer",
+                type: "premium-list",
+                url: "/events/23/2023-GSDCA TEMPERAMENT TEST    and    AKC CANINE GOOD CITIZEN TEST Flyer.pdf",
+                size: "656 KB",
+            },
+            {
+                id: "doc-2",
+                title: "2023-GSDCA-GSDCGNH TEMPERAMENT TEST -CGC -CGCA ENTRY FORM",
+                type: "premium-list",
+                url: "/events/23/2023-GSDCA-GSDCGNH TEMPERAMENT TEST -CGC -CGCA ENTRY FORM.pdf",
+                size: "8 KB",
+            }
+        ],
+        photos: [
+            {
+                id: "1",
+                src: "/events/22/Temperament.jpg",
+                alt: "2025 GSDCA Temperament Test"
+            }
+        ]
+    },
+    {
+        id: "24",
+        title: "2024 Annual Holiday & Awards Dinner",
+        date: "2024-12-08",
+        time: "",
+        location: "Naugatuck, CT",
+        category: "other",
+        description: "",
+        htmlDescription: `
+              <h2 style="font-weight: bold;">2024 Annual Holiday & Awards Dinner</h2>
+  <p><strong>Hosted by:</strong> German Shepherd Dog Club of Greater New Haven</p>
+
+  <p><strong style="color: red;">When:</strong><br>
+     Sunday, December 8th, 2024<br>
+     2:00 PM - 5:00 PM</p>
+
+  <p><strong style="color: red;">Where:</strong><br>
+     Jesse Camille&apos;s Restaurant<br>
+     615 N Church St,<br>
+     Naugatuck, CT 06770</p>
+
+  <p><strong>Menu:</strong></p>
+  <ul>
+    <li>Cheese and Crackers</li>
+    <li>Salad</li>
+    <li>Penne Pomodoro</li>
+    <li>Chicken Marsala</li>
+    <li>Seafood Stuffed Sole</li>
+    <li>Whipped Potatoes</li>
+    <li>Mixed Vegetables</li>
+    <li>Cake & Coffee</li>
+  </ul>
+
+  <p><strong style="color: green;">Cost:</strong><br>
+     FREE TO MEMBERS - SEE MESSAGE BELOW<br>
+     Cash Bar</p>
+
+  <p><strong>RSVP:</strong><br>
+     Please RSVP BY DEC 1st by emailing 
+     <a href="mailto:ktrombetto@hotmail.com" style="color: blue;">ktrombetto@hotmail.com</a><br>
+     You will receive a confirmation email</p>
+
+  <p><strong style="color: purple;">Doggy Grab Bag:</strong><br>
+     If you would like to participate, please bring a $15 Doggy Grab Bag.<br>
+     (Make sure it&apos;s suitable for a GSD—no treats or rawhide please!)</p>
+
+  <p>We&apos;re looking forward to seeing you!<br>
+     <strong>The German Shepherd Dog Club of Greater New Haven</strong></p>
+
+        `,
+        registrationRequired: false,
+        hasDocuments: true,
+        documents: [
+            {
+                id: "doc-1",
+                title: "Annual Holiday Dinner invitation 2023",
+                type: "premium-list",
+                url: "/events/24/Annual Holiday Dinner invitation 2023.pdf",
+                size: "248 KB",
+            }
+        ]
+    },
+    {
+        id: "25",
+        title: "Donations needed for our Futurity Show.",
+        date: "02-07-2024",
+        time: "",
+        location: "",
+        category: "other",
+        description: "",
+        htmlDescription: `
+            <p>A futurity/maturity is when breeders nominate their litters to the parent club futurity/maturity system, and then showcase their promising puppies. It is run like a specialty show but there are no points to win towards championships. Classes are named - junior dog/bitches (youngest), teenage, intermediate and senior. Winners and runners up in each region are invited to attend the national. You pay entry fees. You win ribbons and the winner gets a plaque.</p>
+            <p>The GSDCGNH is hosting the Northeast Futurity/Maturity on 6/9/2 along with two specialty shows on 6/8/24. We are seeking donations. We&apos;ve waited 4 years to host this event. Your donation, no matter how large or small would be greatly appreciated. Donate for the catalog (picture of your German shepherd), for trophies or just for good luck to all exhibitors. We get 100% of ad income and 60/40 for trophies.</p>
+            <p>You may donate by credit card in the GSDCA store or by mailing a check to: Holly Bryan, 8890 Bethel Road, Gainesville, GA 30506. Please make checks payable to GSDA Futurity. Don't forget to put NORTHEAST region on the check.</p>
+            <p>THANK YOU for anything you may do to help our cause!</p>
+        `,
+        registrationRequired: false,
+        hasDocuments: false
+    },
+    {
+        id: "26",
+        title: "2023 Annual Holiday & Awards Dinner",
+        date: "2023-12-03",
+        time: "",
+        location: "Naugatuck, CT",
+        category: "other",
+        description: "",
+        htmlDescription: `
+            <h2 style="font-weight: bold;">2023 Annual Holiday & Awards Dinner</h2>
+  <p><strong>Hosted by:</strong> German Shepherd Dog Club of Greater New Haven</p>
+
+  <p><strong style="color: red;">When:</strong><br>
+     Sunday, December 3rd, 2023<br>
+     2:00 PM - 4:00 PM</p>
+
+  <p><strong style="color: red;">Where:</strong><br>
+     Jesse Camille&apos;s Restaurant<br>
+     615 N Church St,<br>
+     Naugatuck, CT 06770</p>
+
+  <p><strong>Menu Includes:</strong></p>
+  <ul>
+    <li>Penne Pomodoro</li>
+    <li>Whipped Potatoes</li>
+    <li>Sauteed Fresh Vegetables</li>
+    <li>Garden Salad w/ Roasted Tomato Balsamic Vinaigrette</li>
+    <li>Coffee / Tea / Iced Lemon Water</li>
+    <li>Chicken Marsala with Mushrooms</li>
+    <li>Seafood Stuffed Filet of Sole with Dill Butter Sauce</li>
+  </ul>
+
+  <p><strong style="color: green;">Cost:</strong><br>
+     $28.00 per person (includes tax & gratuity)</p>
+
+  <p><strong>Payment:</strong><br>
+     Please send payment by November 27th to:<br>
+     Ina Goldschmidt<br>
+     2 Lantern Ridge Court<br>
+     Oxford, CT 06478</p>
+
+  <p><strong style="color: purple;">Doggy Grab Bag:</strong><br>
+     Bring a $15 gift appropriate for a German Shepherd Dog (no treats or rawhide please)</p>
+
+  <p>We look forward to celebrating with you!<br>
+     <strong>The German Shepherd Dog Club of Greater New Haven</strong></p>
+
+
+        `,
+        registrationRequired: false,
+        hasDocuments: true,
+        documents: [
+            {
+                id: "doc-1",
+                title: "Annual Holiday Dinner invitation 2023",
+                type: "premium-list",
+                url: "/events/24/Annual Holiday Dinner invitation 2023.pdf",
+                size: "248 KB",
+            }
+        ]
+    },
+    {
+        id: "27",
+        title: "AM and PM Conformation Shows, Trumbull",
+        date: "2024-10-11",
+        time: "",
+        location: "Trumbull, CT",
+        category: "conformation",
+        description: "",
+        htmlDescription: `
+            <p>Save the date for our annual Conformation Show at Unity Park Trumbull.</p>
+            <br />
+            <p><strong>Dates:</strong> October 11 & 12th</p>
+            <p><strong>Location:</strong> Trumbull, CT</p>            
+            <br />
+
+            <p><i>Premium list is available below</i></p>
+        `,
+        registrationRequired: false,
+        hasDocuments: true,
+        documents: [
+            {
+                id: "doc-1",
+                title: "October Conformation Show Premium List",
+                type: "premium-list",
+                url: "/events/27/GSDCGNH PREMIUM LIST 10.12.24.pdf",
+                size: "441 KB",
+            }
+        ],
+        photos: [
+            {
+                id: "1",
+                src: "/events/27/Conformation.jpg",
+                alt: "Conformation Show"
+            }
+        ]
+    },
+    {
+        id: "28",
+        title: "AM and PM Conformation Shows",
+        date: "2024-06-08",
+        time: "",
+        location: "Bethel, CT",
+        category: "conformation",
+        description: "",
+        htmlDescription: `
+            <p>Join us this summer for AM and PM Conformation Shows. More details coming soon.</p>
+            <br />
+            <p>Akc shows June 8th at Stony Hill Preserve on route 6 in Bethel Ct.</p>
+            <p>Judges are:</p>
+            <br />
+            <p>AM Show: Jennifer Root</p>
+            <p>PM show: Robert Drescher</p>
+            <br />
+
+            <p><i>Premium list is available below</i></p>
+        `,
+        registrationRequired: false,
+        hasDocuments: true,
+        documents: [
+            {
+                id: "doc-1",
+                title: "Premium List",
+                type: "premium-list",
+                url: "/events/28/GSDCGNH PREMIUM LIST 6.24.pdf",
+                size: "653 KB",
+            }
+        ],
+        photos: [
+            {
+                id: "1",
+                src: "/events/27/Conformation.jpg",
+                alt: "Conformation Show"
+            }
+        ]
+    },
+    {
+        id: "29",
+        title: "88th & 89th Fall Specialty Show, Unbenched",
+        date: "2023-10-14",
+        time: "7:00 AM - 5:00 PM",
+        location: "Trumbull, CT",
+        category: "conformation",
+        description: "",
+        htmlDescription: `
+            <p>Join us for our 88th & 89th Fall Specialty Show at Unity Park in Trumbull.</p>
+
+<p>Please see the attached Premium List for Show Details and Registration Information.</p>
+
+<p><strong>Event Chairman</strong><br />
+John Vaught<br />
+914-414-0244<br />
+masstana@aol.com</p>
+
+<p><strong>Event Secretary</strong><br />
+Lynn Sinclair<br />
+609-839-8170<br />
+Lynnie2974@msn.com</p>
+
+            <p><i>Premium list is available below</i></p>
+        `,
+        registrationRequired: false,
+        hasDocuments: true,
+        documents: [
+            {
+                id: "doc-1",
+                title: "Premium List",
+                type: "premium-list",
+                url: "/events/29/GSDCGNH 10.14.23.pdf",
+                size: "1,021 KB",
+            }
+        ],
+        photos: [
+            {
+                id: "1",
+                src: "/events/27/Conformation.jpg",
+                alt: "Conformation Show"
+            }
+        ]
+    },
+    {
+        id: "30",
+        title: "Conformation Show - GSD Specialty Show in conjunction with Greenwich Kennel Club Show",
+        date: "2023-06-10",
+        time: "6:30 AM - 6:00 PM",
+        location: "Norwalk, CT",
+        category: "conformation",
+        description: "",
+        htmlDescription: `
+            <p>Join us for a Conformation Show In conjunction with the Greenwich Kennel Club All Breed Show (GKC), Taylor Farm Park (Norwalk)</p>
+
+            <p>GSDCGNH is holding a specialty show following GSD judging at the GKC Show.</p>
+
+            <p>Judge for Greenwich Kennel Club Show is Barbara Lopez (Killingsworth, CT)</p>
+
+            <p>Judge for GSDC GNH Specialty Show is Christina Halliday (Waynsburg, PA)</p>
+
+            <p>Show Secretary is Lynn Sinclair. Email: lynnie2974@msn.com</p>
+
+            <p>Show Chair is John Vaught. Email: masstana@aol.com</p>
+
+            <p>Premium List will be out the last week of April, 2023.</p>
+
+            <p>Accommodations and Directions listed on the GKC Website.</p>
+
+            <p><i>Premium list is available below</i></p>
+        `,
+        registrationRequired: false,
+        hasDocuments: true,
+        documents: [
+            {
+                id: "doc-1",
+                title: "Premium List",
+                type: "premium-list",
+                url: "/events/30/GSDCGNH Premium List 6.10.23.pdf",
+                size: "749 KB",
+            }
+        ],
+        photos: [
+            {
+                id: "1",
+                src: "/events/30/Conformation2.jpg",
+                alt: "Conformation Show"
+            }
+        ]
+    },
+    {
+        id: "31",
+        title: "NNJGSDC Spring Specialty Show",
+        date: "2023-04-08",
+        time: "9:00 AM - 5:00 PM",
+        location: "Barto, PA",
+        category: "conformation",
+        description: "",
+        htmlDescription: `
+            <p>Join us for a Conformation Show In conjunction with the Greenwich Kennel Club All Breed Show (GKC), Taylor Farm Park (Norwalk)</p>
+        `,
+        registrationRequired: false,
+        hasDocuments: false,
+        photos: [
+            {
+                id: "1",
+                src: "/events/31/Screenshot_20230319_184118_Messenger.jpg",
+                alt: "Conformation Show"
+            }
+        ]
+    },
 ]
 
 const today = new Date()

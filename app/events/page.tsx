@@ -271,10 +271,13 @@ export default function EventsPage() {
                 {event.galleryId && (
                     <div className="mb-4">
                         <Link href={`/gallery?event=${event.galleryId}`}>
-                            <Button variant="outline" size="sm" className="w-full sm:w-auto">
-                                <Images className="h-4 w-4 mr-2" />
-                                View Event Photos
-                            </Button>
+                            <Button 
+    size="sm" 
+    className="w-full sm:w-auto bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white border-0 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 font-semibold"
+>
+    <Images className="h-4 w-4 mr-2" />
+    View Event Photos
+</Button>
                         </Link>
                     </div>
                 )}

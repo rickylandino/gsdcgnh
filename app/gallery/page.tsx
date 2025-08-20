@@ -1,6 +1,6 @@
 "use client"
 
-import { useState, useEffect, useMemo } from "react"
+import { useState, useEffect, useMemo, Suspense } from "react"
 import { useSearchParams } from "next/navigation"
 import { Button } from "@/components/ui/button"
 import { X, ChevronLeft, ChevronRight, Calendar, ArrowLeft, ExternalLink } from "lucide-react"
@@ -8,7 +8,7 @@ import Image from "next/image"
 import Link from "next/link"
 import { allPhotos, photographerLinks, type GalleryPhoto } from './photo-manifest'
 
-export default function GalleryPage() {
+function GalleryContent() {
   const searchParams = useSearchParams()
   const eventFilter = searchParams.get('event')
   const categoryFilter = searchParams.get('category')
@@ -196,13 +196,13 @@ export default function GalleryPage() {
                       </div>
                       
                       {/* Photo info overlay */}
-                      {photo.eventTitle && (
+                      {/* {photo.eventTitle && (
                         <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                           <div className="p-3">
                             <p className="text-white text-xs font-medium">{photo.eventTitle}</p>
                           </div>
                         </div>
-                      )}
+                      )} */}
                     </div>
                   </div>
                 ))}
@@ -313,11 +313,11 @@ export default function GalleryPage() {
               </div>
               
               {/* Photo info overlay */}
-              {selectedPhoto.eventTitle && (
+              {/* {selectedPhoto.eventTitle && (
                 <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent text-white p-6">
                   <p className="text-sm text-gray-300">{selectedPhoto.eventTitle}</p>
                 </div>
-              )}
+              )} */}
             </div>
 
             {/* Photo counter */}
@@ -330,5 +330,30 @@ export default function GalleryPage() {
         </div>
       )}
     </div>
+  )
+}
+
+// Loading component
+function GalleryLoading() {
+  return (
+    <div className="min-h-screen bg-gray-50">
+      <section className="text-white py-16 relative">
+        <div className="absolute inset-0 chrome-gradient opacity-80" />
+        <div className="container mx-auto px-4 max-w-6xl relative z-10">
+          <div className="text-center">
+            <h1 className="text-4xl md:text-5xl font-bold mb-6">Photo Gallery</h1>
+            <p className="text-xl text-chrome-200">Loading...</p>
+          </div>
+        </div>
+      </section>
+    </div>
+  )
+}
+
+export default function GalleryPage() {
+  return (
+    <Suspense fallback={<GalleryLoading />}>
+      <GalleryContent />
+    </Suspense>
   )
 }

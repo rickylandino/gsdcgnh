@@ -13,6 +13,12 @@ interface EventDocument {
     size?: string
 }
 
+export interface EventGallery {
+  id: string
+  label?: string
+  description?: string
+}
+
 interface Event {
     id: string
     title: string
@@ -27,7 +33,7 @@ interface Event {
     results?: string
     photos?: EventPhoto[]
     documents?: EventDocument[]
-    galleryId?: string
+    galleryId?: string | string[] | EventGallery[]
     hideDay?: boolean
 }
 
@@ -66,7 +72,10 @@ const events: Event[] = [
                 size: "386 KB",
             }
         ],
-        galleryId: "obedience-july-20"
+        galleryId: [
+            { id: "obedience-july-20", label: "Obedience Trial Photos" },
+            { id: "akc-rally-trial-july-20", label: "AKC Rally Trial Photos" }
+        ]
     },
     {
         id: "2",

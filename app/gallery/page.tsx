@@ -102,9 +102,6 @@ function GalleryContent() {
   }
 
   const getPageDescription = () => {
-    if (eventFilter) {
-      return "Event specific photos"
-    }
     if (categoryFilter) {
       return `All photos from ${categoryFilter} activities`
     }
@@ -246,7 +243,7 @@ function GalleryContent() {
                       rel="noopener noreferrer"
                       className="inline-flex items-center gap-2 bg-gray-600 hover:bg-gray-700 text-white px-6 py-3 rounded-lg transition-colors duration-200 font-medium"
                     >
-                      <span>View Kelly Iannello Photography&apos;s Full Gallery</span>
+                      <span>View Kelly Iannello Photography&apos;s Portfolio</span>
                       <ExternalLink className="h-4 w-4" />
                     </a>
                   </div>

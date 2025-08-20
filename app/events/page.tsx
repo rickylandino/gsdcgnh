@@ -267,18 +267,48 @@ export default function EventsPage() {
                     </div>
                 )}
 
-                {/* Gallery Link Section */}
+                {/* Enhanced Gallery Link Section */}
                 {event.galleryId && (
                     <div className="mb-4">
-                        <Link href={`/gallery?event=${event.galleryId}`}>
-                            <Button 
-    size="sm" 
-    className="w-full sm:w-auto bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white border-0 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 font-semibold"
->
-    <Images className="h-4 w-4 mr-2" />
-    View Event Photos
-</Button>
-                        </Link>
+                        <div className="space-y-2">
+                            {Array.isArray(event.galleryId) ? (
+                                event.galleryId.map((gallery, index) => {
+                                    // Handle both string and object formats
+                                    const galleryId = typeof gallery === 'string' ? gallery : gallery.id
+                                    const label = typeof gallery === 'string' 
+                                        ? `View Event Photos ${event.galleryId!.length > 1 ? `(${index + 1})` : ''}`
+                                        : gallery.label || `View Event Photos (${index + 1})`
+                                    
+                                    return (
+                                        <div key={galleryId} className="flex flex-col sm:flex-row sm:items-center gap-2">
+                                            <Link href={`/gallery?event=${galleryId}`}>
+                                                <Button 
+                                                    size="sm" 
+                                                    className="w-full sm:w-auto bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white border-0 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 font-semibold"
+                                                >
+                                                    <Images className="h-4 w-4 mr-2" />
+                                                    {label}
+                                                </Button>
+                                            </Link>
+                                            {typeof gallery === 'object' && gallery.description && (
+                                                <span className="text-sm text-gray-600">{gallery.description}</span>
+                                            )}
+                                        </div>
+                                    )
+                                })
+                            ) : (
+                                // Single gallery link
+                                <Link href={`/gallery?event=${event.galleryId}`}>
+                                    <Button 
+                                        size="sm" 
+                                        className="w-full sm:w-auto bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white border-0 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 font-semibold"
+                                    >
+                                        <Images className="h-4 w-4 mr-2" />
+                                        View Event Photos
+                                    </Button>
+                                </Link>
+                            )}
+                        </div>
                     </div>
                 )}
 

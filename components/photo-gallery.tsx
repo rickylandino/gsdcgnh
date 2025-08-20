@@ -54,8 +54,19 @@ export default function PhotoGallery({ photos, title, columns = 3 }: PhotoGaller
             }
         }
 
+        // Disable common save shortcuts
+        const handleKeyPress = (e: KeyboardEvent) => {
+            if ((e.ctrlKey || e.metaKey) && e.key === 's') {
+                e.preventDefault()
+            }
+        }
+
         window.addEventListener("keydown", handleKeyDown)
-        return () => window.removeEventListener("keydown", handleKeyDown)
+        window.addEventListener("keydown", handleKeyPress)
+        return () => {
+            window.removeEventListener("keydown", handleKeyDown)
+            window.removeEventListener("keydown", handleKeyPress)
+        }
     }, [selectedPhoto])
 
     const gridCols = {
@@ -76,12 +87,19 @@ export default function PhotoGallery({ photos, title, columns = 3 }: PhotoGaller
                 {photos.map((photo, index) => (
                     <Card key={photo.id} className="overflow-hidden hover:shadow-lg transition-shadow cursor-pointer">
                         <CardContent className="p-0">
-                            <div className="relative aspect-square overflow-hidden" onClick={() => openLightbox(photo, index)}>
+                            <div 
+                                className="relative aspect-square overflow-hidden select-none" 
+                                onClick={() => openLightbox(photo, index)}
+                                onContextMenu={(e) => e.preventDefault()}
+                                onDragStart={(e) => e.preventDefault()}
+                            >
                                 <Image
                                     src={photo.src || "/placeholder.svg"}
                                     alt={photo.alt}
                                     fill
-                                    className="transition-transform duration-300"
+                                    className="transition-transform duration-300 pointer-events-none"
+                                    draggable={false}
+                                    onContextMenu={(e) => e.preventDefault()}
                                 />
                             </div>
                             {photo.caption && (
@@ -131,13 +149,19 @@ export default function PhotoGallery({ photos, title, columns = 3 }: PhotoGaller
                         )}
 
                         {/* Image */}
-                        <div className="relative">
+                        <div 
+                            className="relative select-none"
+                            onContextMenu={(e) => e.preventDefault()}
+                            onDragStart={(e) => e.preventDefault()}
+                        >
                             <Image
                                 src={selectedPhoto.src || "/placeholder.svg"}
                                 alt={selectedPhoto.alt}
                                 width={800}
                                 height={800}
-                                className="max-w-full max-h-[80vh] object-contain"
+                                className="max-w-full max-h-[80vh] object-contain pointer-events-none"
+                                draggable={false}
+                                onContextMenu={(e) => e.preventDefault()}
                             />
                             {selectedPhoto.caption && (
                                 <div className="absolute bottom-0 left-0 right-0 bg-black/70 text-white p-4">

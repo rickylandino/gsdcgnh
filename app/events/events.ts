@@ -1424,11 +1424,17 @@ Lynnie2974@msn.com</p>
     },
 ]
 
+// ...existing code...
 const today = new Date()
 today.setHours(0, 0, 0, 0)
 
-const upcomingEvents = events.filter((event) => new Date(event.date) >= today)
-const pastEvents = events.filter((event) => new Date(event.date) < today)
+// Create a date 45 days ago
+const fortyFiveDaysAgo = new Date(today)
+fortyFiveDaysAgo.setDate(today.getDate() - 45)
+
+const upcomingEvents = events.filter((event) => new Date(event.date) >= fortyFiveDaysAgo)
+const pastEvents = events.filter((event) => new Date(event.date) < fortyFiveDaysAgo)
+// ...existing code...
 
 export type { Event, EventDocument, EventPhoto }
 export { events, upcomingEvents, pastEvents }

@@ -81,7 +81,7 @@ export default function AboutPage() {
                                     In 1950, the German Shepherd Dog Club of Greater New Haven was formed and dedicated to the enhancement of the breed in our area. Led by our first President William Goldbecker, a Fire Chief in New Haven, he brought to the membership the knowledge he had acquired from his native Cologne, Germany, about the German Shepherd Dog.
                                 </p>
                                 <p>
-                                    It was not until 1960/1961, that our Club obtained official recognition from the German Shepherd Dog Club of America and the American Kennel Club. Our first show was held in 1961. Among the small group of fanciers who gave life and vigor to the Club was Betsy Gomez and Richard Cusano, and several others.
+                                    It was not until 1960/1961, that our Club obtained official recognition from the German Shepherd Dog Club of America and the American Kennel Club. Our first show was held in 1961.
                                 </p>
                                 <p>
                                     Since the first show in Wallingford, Connecticut, eminent American & Canadian specialists in the breed judged our specialties including Walter Martin of the Wienerau Kennels who came from Germany to Judge our fifteenth Annual Specialty Show on October 9th 1976.

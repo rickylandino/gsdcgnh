@@ -9,7 +9,7 @@ export function AboutSection() {
         <div className="text-center mb-12">
           <h2 className="text-4xl font-bold text-white mb-4">About Our Club</h2>
           <p className="text-xl text-chrome-100 max-w-3xl mx-auto">
-            The German Shepherd Dog Club of Greater New Haven has been serving the community for over 40 years,
+            The German Shepherd Dog Club of Greater New Haven has been serving the community for over 65 years,
             promoting responsible ownership and the betterment of the breed.
           </p>
         </div>

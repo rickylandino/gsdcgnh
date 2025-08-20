@@ -208,21 +208,37 @@ export default function EventsPage() {
                     {event.photos?.map((photo, idx) => (
                         <Dialog key={idx}>
                             <DialogTrigger asChild>
-                                <img
-                                    src={photo!.src || "/placeholder.svg"}
-                                    alt={photo!.alt || "Event photo"}
-                                    className="mx-auto pb-3 cursor-pointer max-h-48 rounded shadow"
-                                />
+                                <div 
+                                    className="select-none mx-auto"
+                                    onContextMenu={(e) => e.preventDefault()}
+                                    onDragStart={(e) => e.preventDefault()}
+                                >
+                                    <img
+                                        src={photo!.src || "/placeholder.svg"}
+                                        alt={photo!.alt || "Event photo"}
+                                        className="mx-auto pb-3 cursor-pointer max-h-48 rounded shadow pointer-events-none"
+                                        draggable={false}
+                                        onContextMenu={(e) => e.preventDefault()}
+                                    />
+                                </div>
                             </DialogTrigger>
                             <DialogContent className="max-w-lg p-0">
                                 <DialogHeader>
                                     <DialogTitle>{event.title}</DialogTitle>
                                 </DialogHeader>
-                                <img
-                                    src={photo!.src || "/placeholder.svg"}
-                                    alt={photo!.alt || "Event photo"}
-                                    className="w-full h-auto rounded"
-                                />
+                                <div 
+                                    className="select-none"
+                                    onContextMenu={(e) => e.preventDefault()}
+                                    onDragStart={(e) => e.preventDefault()}
+                                >
+                                    <img
+                                        src={photo!.src || "/placeholder.svg"}
+                                        alt={photo!.alt || "Event photo"}
+                                        className="w-full h-auto rounded pointer-events-none"
+                                        draggable={false}
+                                        onContextMenu={(e) => e.preventDefault()}
+                                    />
+                                </div>
                             </DialogContent>
                         </Dialog>
                     ))}
@@ -414,7 +430,7 @@ export default function EventsPage() {
                             <TabsList className="grid w-full grid-cols-2">
                                 <TabsTrigger value="upcoming" className="flex items-center gap-2">
                                     <Calendar className="h-4 w-4" />
-                                    Upcoming Events ({filteredUpcomingEvents.length})
+                                    Upcoming & Recent Events ({filteredUpcomingEvents.length})
                                 </TabsTrigger>
                                 <TabsTrigger value="past" className="flex items-center gap-2">
                                     <History className="h-4 w-4" />

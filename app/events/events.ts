@@ -35,7 +35,7 @@ const events: Event[] = [
     // Past Events
     {
         id: "1",
-        title: "Obedience and Rally All Breed Speciality Trial Manchester CT",
+        title: "Obedience and Rally All Breed Specialty Trial Manchester CT",
         date: "2025-07-20",
         time: "8:30 AM - 5:00 PM",
         location: "175 Adams st Manchester CT 06402",

@@ -224,7 +224,7 @@ export default function GalleryPage() {
                       rel="noopener noreferrer"
                       className="inline-flex items-center gap-2 bg-gray-600 hover:bg-gray-700 text-white px-6 py-3 rounded-lg transition-colors duration-200 font-medium"
                     >
-                      <span>View {currentPhotographerLink.photographerName}'s Full Gallery</span>
+                      <span>View {currentPhotographerLink.photographerName}&apos;s Full Gallery</span>
                       <ExternalLink className="h-4 w-4" />
                     </a>
                     {currentPhotographerLink.description && (
@@ -246,7 +246,7 @@ export default function GalleryPage() {
                       rel="noopener noreferrer"
                       className="inline-flex items-center gap-2 bg-gray-600 hover:bg-gray-700 text-white px-6 py-3 rounded-lg transition-colors duration-200 font-medium"
                     >
-                      <span>View Kelly Iannello Photography's Full Gallery</span>
+                      <span>View Kelly Iannello Photography&apos;s Full Gallery</span>
                       <ExternalLink className="h-4 w-4" />
                     </a>
                   </div>

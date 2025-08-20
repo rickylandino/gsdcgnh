@@ -14,7 +14,9 @@ import {
     History,
     ImageIcon,
     FileText,
+    Images, // Add this import
 } from "lucide-react"
+import Link from "next/link" // Make sure this is imported
 import { pastEvents, upcomingEvents, Event as EventType } from "./events"
 
 const categoryColors = {
@@ -265,25 +267,17 @@ export default function EventsPage() {
                     </div>
                 )}
 
-                {/* Photos Section */}
-                {/* {event.photos && event.photos.length > 1 && (
+                {/* Gallery Link Section */}
+                {event.galleryId && (
                     <div className="mb-4">
-                        <Dialog>
-                            <DialogTrigger asChild>
-                                <Button variant="outline" size="sm" className="mb-3">
-                                    <ImageIcon className="mr-2" />
-                                    View Photos ({event.photos.length})
-                                </Button>
-                            </DialogTrigger>
-                            <DialogContent className="">
-                                <DialogHeader>
-                                    <DialogTitle>{event.title} - Photo Gallery</DialogTitle>
-                                </DialogHeader>
-                                <PhotoGallery photos={event.photos} columns={3} />
-                            </DialogContent>
-                        </Dialog>
+                        <Link href={`/gallery?event=${event.galleryId}`}>
+                            <Button variant="outline" size="sm" className="w-full sm:w-auto">
+                                <Images className="h-4 w-4 mr-2" />
+                                View Event Photos
+                            </Button>
+                        </Link>
                     </div>
-                )} */}
+                )}
 
                 {/* Documents Section */}
                 {event.documents && event.documents.length > 0 && (

@@ -27,6 +27,7 @@ interface Event {
     results?: string
     photos?: EventPhoto[]
     documents?: EventDocument[]
+    galleryId?: string
     hideDay?: boolean
 }
 
@@ -65,6 +66,7 @@ const events: Event[] = [
                 size: "386 KB",
             }
         ],
+        galleryId: "obedience-july-20"
     },
     {
         id: "2",

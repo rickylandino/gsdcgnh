@@ -52,7 +52,7 @@ export default function Header() {
 
                     {/* Mobile menu button */}
                     <Button variant="ghost" size="sm" className="lg:hidden" onClick={() => setIsMenuOpen(!isMenuOpen)}>
-                        {isMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
+                        {isMenuOpen ? <X className="h-6 w-6" stroke="white" /> : <Menu className="h-6 w-6" stroke="white" />}
                     </Button>
                 </div>
 

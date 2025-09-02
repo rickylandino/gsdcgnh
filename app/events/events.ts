@@ -98,6 +98,15 @@ const events: Event[] = [
                 src: "/events/2025/conformation_october.png",
                 alt: "Conformation October Show"
             }
+        ],
+        documents: [
+            {
+                id: "doc-1",
+                title: "2025 Conformation Show Premium List",
+                type: "info",
+                url: "/events/2/GSDCGNH PREMIUM LIST 10.11.25.pdf",
+                size: "546 KB",
+            }
         ]
     },
     {

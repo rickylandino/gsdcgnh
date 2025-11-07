@@ -241,7 +241,7 @@ export const photographerLinks: Record<string, PhotographerLink> = {
   },
   "october-2025-scent-work": {
     "photographerName": "Kelly Iannello Photography",
-    "url": "https://kellyiannellophotography.pixieset.com/gsdcgnhscentwebpics/",
+    "url": "https://kellyiannellophotography.pixieset.com/gsdcgnhakcscenttrialgeneralgallery/",
     "description": "October 2025 Scent Work"
   }
 };

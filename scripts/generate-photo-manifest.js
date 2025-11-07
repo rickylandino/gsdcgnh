@@ -15,6 +15,11 @@ const PHOTOGRAPHER_LINKS = {
     photographerName: 'Kelly Iannello Photography',
     url: 'https://kellyiannellophotography.pixieset.com/gsdcgnhakcrallytrial/',
     description: 'GSDCGNH AKC Rally Trial'
+  },
+  "october-2025-scent-work": {
+    "photographerName": "Kelly Iannello Photography",
+    "url": "https://kellyiannellophotography.pixieset.com/gsdcgnhscentwebpics/",
+    "description": "October 2025 Scent Work"
   }
 };
 

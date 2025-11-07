@@ -359,6 +359,9 @@ const events: Event[] = [
                 src: "/events/7/image_547.jpg",
                 alt: "Scent Work Trial"
             }
+        ],
+        galleryId: [
+            { id: "october-2025-scent-work", label: "October Scent Work Gallery" }
         ]
     },
     {

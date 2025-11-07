@@ -1,5 +1,5 @@
 // Auto-generated file - do not edit manually
-// Generated on 2025-08-20T13:56:03.880Z
+// Generated on 2025-11-07T10:12:54.771Z
 
 export interface GalleryPhoto {
   src: string;
@@ -155,6 +155,76 @@ export const allPhotos: GalleryPhoto[] = [
     "eventId": "obedience-july-20",
     "eventTitle": "Obedience July 20",
     "category": "obedience"
+  },
+  {
+    "src": "/photo-gallery/october-2025-scent-work/IMG_3605.JPG",
+    "alt": "IMG 3605",
+    "eventId": "october-2025-scent-work",
+    "eventTitle": "October 2025 Scent Work",
+    "category": "trial"
+  },
+  {
+    "src": "/photo-gallery/october-2025-scent-work/IMG_3606.JPG",
+    "alt": "IMG 3606",
+    "eventId": "october-2025-scent-work",
+    "eventTitle": "October 2025 Scent Work",
+    "category": "trial"
+  },
+  {
+    "src": "/photo-gallery/october-2025-scent-work/_DSC2370-2.jpg",
+    "alt": " DSC2370 2",
+    "eventId": "october-2025-scent-work",
+    "eventTitle": "October 2025 Scent Work",
+    "category": "trial"
+  },
+  {
+    "src": "/photo-gallery/october-2025-scent-work/_DSC5513-3.JPG",
+    "alt": " DSC5513 3",
+    "eventId": "october-2025-scent-work",
+    "eventTitle": "October 2025 Scent Work",
+    "category": "trial"
+  },
+  {
+    "src": "/photo-gallery/october-2025-scent-work/_DSC5602-2.JPG",
+    "alt": " DSC5602 2",
+    "eventId": "october-2025-scent-work",
+    "eventTitle": "October 2025 Scent Work",
+    "category": "trial"
+  },
+  {
+    "src": "/photo-gallery/october-2025-scent-work/_DSC5850-2.jpg",
+    "alt": " DSC5850 2",
+    "eventId": "october-2025-scent-work",
+    "eventTitle": "October 2025 Scent Work",
+    "category": "trial"
+  },
+  {
+    "src": "/photo-gallery/october-2025-scent-work/_DSC5903-2.JPG",
+    "alt": " DSC5903 2",
+    "eventId": "october-2025-scent-work",
+    "eventTitle": "October 2025 Scent Work",
+    "category": "trial"
+  },
+  {
+    "src": "/photo-gallery/october-2025-scent-work/_DSC6076-2.JPEG",
+    "alt": " DSC6076 2",
+    "eventId": "october-2025-scent-work",
+    "eventTitle": "October 2025 Scent Work",
+    "category": "trial"
+  },
+  {
+    "src": "/photo-gallery/october-2025-scent-work/_DSC7527-23.JPG",
+    "alt": " DSC7527 23",
+    "eventId": "october-2025-scent-work",
+    "eventTitle": "October 2025 Scent Work",
+    "category": "trial"
+  },
+  {
+    "src": "/photo-gallery/october-2025-scent-work/_DSC8218-2.jpg",
+    "alt": " DSC8218 2",
+    "eventId": "october-2025-scent-work",
+    "eventTitle": "October 2025 Scent Work",
+    "category": "trial"
   }
 ];
 
@@ -168,5 +238,10 @@ export const photographerLinks: Record<string, PhotographerLink> = {
     "photographerName": "Kelly Iannello Photography",
     "url": "https://kellyiannellophotography.pixieset.com/gsdcgnhakcrallytrial/",
     "description": "GSDCGNH AKC Rally Trial"
+  },
+  "october-2025-scent-work": {
+    "photographerName": "Kelly Iannello Photography",
+    "url": "https://kellyiannellophotography.pixieset.com/gsdcgnhscentwebpics/",
+    "description": "October 2025 Scent Work"
   }
 };

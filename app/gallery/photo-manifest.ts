@@ -1,5 +1,5 @@
 // Auto-generated file - do not edit manually
-// Generated on 2025-11-07T10:12:54.771Z
+// Generated on 2025-11-07T10:21:02.950Z
 
 export interface GalleryPhoto {
   src: string;
@@ -171,8 +171,8 @@ export const allPhotos: GalleryPhoto[] = [
     "category": "trial"
   },
   {
-    "src": "/photo-gallery/october-2025-scent-work/_DSC2370-2.jpg",
-    "alt": " DSC2370 2",
+    "src": "/photo-gallery/october-2025-scent-work/_DSC5385-2.jpg",
+    "alt": " DSC5385 2",
     "eventId": "october-2025-scent-work",
     "eventTitle": "October 2025 Scent Work",
     "category": "trial"
@@ -199,15 +199,15 @@ export const allPhotos: GalleryPhoto[] = [
     "category": "trial"
   },
   {
-    "src": "/photo-gallery/october-2025-scent-work/_DSC5903-2.JPG",
-    "alt": " DSC5903 2",
+    "src": "/photo-gallery/october-2025-scent-work/_DSC6076-2.JPEG",
+    "alt": " DSC6076 2",
     "eventId": "october-2025-scent-work",
     "eventTitle": "October 2025 Scent Work",
     "category": "trial"
   },
   {
-    "src": "/photo-gallery/october-2025-scent-work/_DSC6076-2.JPEG",
-    "alt": " DSC6076 2",
+    "src": "/photo-gallery/october-2025-scent-work/_DSC6702-3.jpg",
+    "alt": " DSC6702 3",
     "eventId": "october-2025-scent-work",
     "eventTitle": "October 2025 Scent Work",
     "category": "trial"
@@ -220,8 +220,8 @@ export const allPhotos: GalleryPhoto[] = [
     "category": "trial"
   },
   {
-    "src": "/photo-gallery/october-2025-scent-work/_DSC8218-2.jpg",
-    "alt": " DSC8218 2",
+    "src": "/photo-gallery/october-2025-scent-work/_DSC9228-2.JPEG",
+    "alt": " DSC9228 2",
     "eventId": "october-2025-scent-work",
     "eventTitle": "October 2025 Scent Work",
     "category": "trial"

@@ -36,7 +36,7 @@ const categoryLabels = {
     seminar: "Seminar",
     obedience: "Obedience & Rally",
     test: "Temperament Test",
-    other: "Other"
+    other: "Annual Awards Dinner"
 }
 
 const documentTypeLabels = {
@@ -81,24 +81,41 @@ export default function EventsPage() {
             const [year, month, day] = dateString.split("-").map(Number)
             return new Date(year, month - 1, day)
         }
+        // If dateString matches YYYY-MM, treat as first of month
+        if (/^\d{4}-\d{2}$/.test(dateString)) {
+            const [year, month] = dateString.split("-").map(Number)
+            return new Date(year, month - 1, 1)
+        }
         return new Date(dateString)
     }
 
     const formatDate = (dateString: string, hideDay: boolean = false) => {
+        // If dateString matches YYYY-MM, show only year and month
+        if (/^\d{4}-\d{2}$/.test(dateString)) {
+            const date = parseDateAsUTC(dateString);
+            return date.toLocaleDateString("en-US", {
+                year: "numeric",
+                month: "long",
+            });
+        }
+        // If dateString matches YYYY, show only year
+        if (/^\d{4}$/.test(dateString)) {
+            return dateString;
+        }
         const date = parseDateAsUTC(dateString);
         if (hideDay) {
             // If dateString does not have a day, show only month and year
             return date.toLocaleDateString("en-US", {
                 year: "numeric",
                 month: "long",
-            })
+            });
         }
         return date.toLocaleDateString("en-US", {
             weekday: "long",
             year: "numeric",
             month: "long",
             day: "numeric",
-        })
+        });
     }
 
     const getRelativeDate = (dateString: string) => {
@@ -195,56 +212,56 @@ export default function EventsPage() {
                                 </div>
                             }
                             {event.location &&
-                            <div className="flex items-center gap-2">
-                                <MapPin className="h-4 w-4" />
-                                <span>{event.location}</span>
-                            </div>
-}
+                                <div className="flex items-center gap-2">
+                                    <MapPin className="h-4 w-4" />
+                                    <span>{event.location}</span>
+                                </div>
+                            }
                         </div>
                     </div>
                 </div>
             </CardHeader>
             <CardContent>
                 {(event.photos?.length ?? 0) > 0 &&
-                <div className="flex items-center mb-4">
-                    {event.photos?.map((photo, idx) => (
-                        <Dialog key={idx}>
-                            <DialogTrigger asChild>
-                                <div 
-                                    className="select-none mx-auto"
-                                    onContextMenu={(e) => e.preventDefault()}
-                                    onDragStart={(e) => e.preventDefault()}
-                                >
-                                    <img
-                                        src={photo!.src || "/placeholder.svg"}
-                                        alt={photo!.alt || "Event photo"}
-                                        className="mx-auto pb-3 cursor-pointer max-h-48 rounded shadow pointer-events-none"
-                                        draggable={false}
+                    <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-3 mb-4">
+                        {event.photos?.map((photo, idx) => (
+                            <Dialog key={idx}>
+                                <DialogTrigger asChild>
+                                    <div
+                                        className="select-none w-full h-full"
                                         onContextMenu={(e) => e.preventDefault()}
-                                    />
-                                </div>
-                            </DialogTrigger>
-                            <DialogContent className="max-w-lg p-0">
-                                <DialogHeader>
-                                    <DialogTitle>{event.title}</DialogTitle>
-                                </DialogHeader>
-                                <div 
-                                    className="select-none"
-                                    onContextMenu={(e) => e.preventDefault()}
-                                    onDragStart={(e) => e.preventDefault()}
-                                >
-                                    <img
-                                        src={photo!.src || "/placeholder.svg"}
-                                        alt={photo!.alt || "Event photo"}
-                                        className="w-full h-auto rounded pointer-events-none"
-                                        draggable={false}
+                                        onDragStart={(e) => e.preventDefault()}
+                                    >
+                                        <img
+                                            src={photo!.src || "/placeholder.svg"}
+                                            alt={photo!.alt || "Event photo"}
+                                            className="w-full cursor-pointer rounded shadow pointer-events-none"
+                                            draggable={false}
+                                            onContextMenu={(e) => e.preventDefault()}
+                                        />
+                                    </div>
+                                </DialogTrigger>
+                                <DialogContent className="max-w-lg p-0">
+                                    <DialogHeader>
+                                        <DialogTitle>{event.title}</DialogTitle>
+                                    </DialogHeader>
+                                    <div
+                                        className="select-none"
                                         onContextMenu={(e) => e.preventDefault()}
-                                    />
-                                </div>
-                            </DialogContent>
-                        </Dialog>
-                    ))}
-                </div>
+                                        onDragStart={(e) => e.preventDefault()}
+                                    >
+                                        <img
+                                            src={photo!.src || "/placeholder.svg"}
+                                            alt={photo!.alt || "Event photo"}
+                                            className="w-full h-auto rounded pointer-events-none"
+                                            draggable={false}
+                                            onContextMenu={(e) => e.preventDefault()}
+                                        />
+                                    </div>
+                                </DialogContent>
+                            </Dialog>
+                        ))}
+                    </div>
                 }
                 {event.htmlDescription ? (
                     <div
@@ -275,15 +292,15 @@ export default function EventsPage() {
                                 event.galleryId.map((gallery, index) => {
                                     // Handle both string and object formats
                                     const galleryId = typeof gallery === 'string' ? gallery : gallery.id
-                                    const label = typeof gallery === 'string' 
+                                    const label = typeof gallery === 'string'
                                         ? `View Event Photos ${event.galleryId!.length > 1 ? `(${index + 1})` : ''}`
                                         : gallery.label || `View Event Photos (${index + 1})`
-                                    
+
                                     return (
                                         <div key={galleryId} className="flex flex-col sm:flex-row sm:items-center gap-2">
                                             <Link href={`/gallery?event=${galleryId}`}>
-                                                <Button 
-                                                    size="sm" 
+                                                <Button
+                                                    size="sm"
                                                     className="w-full sm:w-auto bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white border-0 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 font-semibold"
                                                 >
                                                     <Images className="h-4 w-4 mr-2" />
@@ -299,8 +316,8 @@ export default function EventsPage() {
                             ) : (
                                 // Single gallery link
                                 <Link href={`/gallery?event=${event.galleryId}`}>
-                                    <Button 
-                                        size="sm" 
+                                    <Button
+                                        size="sm"
                                         className="w-full sm:w-auto bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white border-0 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 font-semibold"
                                     >
                                         <Images className="h-4 w-4 mr-2" />

@@ -14,9 +14,9 @@ interface EventDocument {
 }
 
 export interface EventGallery {
-  id: string
-  label?: string
-  description?: string
+    id: string
+    label?: string
+    description?: string
 }
 
 interface Event {
@@ -1443,6 +1443,69 @@ Lynnie2974@msn.com</p>
                 src: "/events/31/Screenshot_20230319_184118_Messenger.jpg",
                 alt: "Conformation Show"
             }
+        ]
+    },
+    {
+        id: "32",
+        title: "2025 Awards Dinner",
+        date: "2025-12",
+        time: "",
+        location: "",
+        category: "other",
+        description: "",
+        htmlDescription: ``,
+        registrationRequired: false,
+        hasDocuments: true,
+        documents: [
+            {
+                id: "doc-1",
+                title: "2025 Awards List",
+                type: "premium-list",
+                url: "/events/32/2025-Awards-List.pdf",
+                size: "273 KB",
+            }
+        ],
+        photos: [
+            {
+                id: "1",
+                src: "/events/32/1.jpg",
+                alt: "1"
+            },
+            {
+                id: "2",
+                src: "/events/32/2.jpg",
+                alt: "2"
+            },
+            {
+                id: "3",
+                src: "/events/32/3.jpg",
+                alt: "3"
+            },
+            {
+                id: "4",
+                src: "/events/32/4.jpg",
+                alt: "4"
+            },
+            {
+                id: "5",
+                src: "/events/32/5.jpg",
+                alt: "5"
+            },
+            {
+                id: "6",
+                src: "/events/32/6.jpg",
+                alt: "6"
+            },
+            {
+                id: "7",
+                src: "/events/32/7.jpg",
+                alt: "7"
+            },
+            {
+                id: "8",
+                src: "/events/32/8.jpg",
+                alt: "8"
+            },
         ]
     },
 ]

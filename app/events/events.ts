@@ -1506,6 +1506,16 @@ Lynnie2974@msn.com</p>
                 src: "/events/32/8.jpg",
                 alt: "8"
             },
+            {
+                id: "awards1",
+                src: "/events/32/awards1.png",
+                alt: "awards1"
+            },
+            {
+                id: "awards2",
+                src: "/events/32/awards2.png",
+                alt: "awards2"
+            },
         ]
     },
 ]

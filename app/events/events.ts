@@ -1455,16 +1455,7 @@ Lynnie2974@msn.com</p>
         description: "",
         htmlDescription: ``,
         registrationRequired: false,
-        hasDocuments: true,
-        documents: [
-            {
-                id: "doc-1",
-                title: "2025 Awards List",
-                type: "premium-list",
-                url: "/events/32/2025-Awards-List.pdf",
-                size: "273 KB",
-            }
-        ],
+        hasDocuments: false,
         photos: [
             {
                 id: "1",

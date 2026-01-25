@@ -75,7 +75,7 @@ export async function POST(request: NextRequest) {
 
     const mailOptions: Mail.Options = {
         from: `${process.env.NEXT_PUBLIC_URL} ricky@landino.dev`,
-        to: 'ricky@landino.dev',
+        to: process.env.NEXT_PUBLIC_TO_EMAIL,
         subject: `${process.env.NEXT_PUBLIC_BRAND} Website Contact`,
         html: emailHtml,
         replyTo: email

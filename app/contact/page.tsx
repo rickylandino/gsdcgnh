@@ -53,6 +53,7 @@ export default function ContactPage() {
         const grecaptcha = (globalThis as { grecaptcha?: Grecaptcha }).grecaptcha;
         if (!recaptchaSiteKey || !grecaptcha) {
             setErrorVisible(true);
+
             return;
         }
 

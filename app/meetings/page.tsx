@@ -1,6 +1,3 @@
-// }
-
-
 "use client"
 
 import { useState } from "react"
@@ -179,7 +176,7 @@ export default function MeetingsPage() {
                         </div>
                     ) : (
                         <div className="space-y-6">
-                            {currentMeetings.map((meeting, index) => (
+                            {currentMeetings.map((meeting) => (
                                 <Card key={meeting.date + meeting.topic} className="hover:shadow-lg transition-shadow">
                                     <CardHeader>
                                         <div className="flex flex-col md:flex-row md:items-center md:justify-between">

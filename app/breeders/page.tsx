@@ -29,41 +29,10 @@ export default function BreedersPage() {
             phone: "(845) 590-9301",
         },
         {
-            name: "GOOD BRIDGET SHEPHERDS",
-            location: "Easton, CT",
-            email: "treasemavaro@sbcglobal.net",
-            details: [],
-        },
-        {
-            name: "HAWKINS' GATE SHEPHERDS",
-            location: "Stamford, CT",
-            details: ["Breeding Quality: AKC", "Puppies For Home, Companion & Show"],
-            email: "neilhawkins4@sbcglobal.net",
-            phone: "203-952-1308",
-        },
-        {
-            name: "HILLKREST SHEPHERDS",
-            location: "WEST CHESTER COUNTY, NY",
-            details: [],
-            phone: "914-769-6601",
-        },
-        {
             name: "LEGATEHILL GERMAN SHEPHERDS",
             location: "Sandy Hook, CT.",
             details: ["web cam, pedigrees and more."],
             email: "legatehill@yahoo.com",
-        },
-        {
-            name: "MAKINTRAX GERMAN SHEPHERDS",
-            location: "Barkhamsted, CT",
-            details: [
-                "AKC BREEDER OF MERIT",
-                "Member: German Shepherd Dog Club of America",
-                "Our pups are bred for Conformation, Performance, Obedience & Family Companions.",
-                "We offer Stud Service to Approved Bitches",
-            ],
-            email: "Makintraxgsd@gmail.com",
-            phone: "(860) 951-6390",
         },
         {
             name: "MASSTANA GERMAN SHEPHERDS",
@@ -77,12 +46,6 @@ export default function BreedersPage() {
             location: "Watertown, CT",
             website: "http://www.mystrashepherds.com/",
             details: ["Black/tan, Black/red & Sable Puppies Available"],
-        },
-        {
-            name: "PATMAR GERMAN SHEPHERDS",
-            location: "Mahopac, NY",
-            details: ["AKC/CKC registered puppies from top American/Canadian bloodlines and champion stud service."],
-            phone: "(914) 483-0770",
         },
         {
             name: "RALLYNS GERMAN SHEPHERDS",

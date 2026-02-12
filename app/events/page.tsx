@@ -46,6 +46,7 @@ const documentTypeLabels = {
     flyer: "Flyer",
     info: "Information",
     photos: "Photos",
+    "registration form": "Registration Form",
     "": "Document",
 }
 
@@ -56,6 +57,7 @@ const documentTypeIcons = {
     flyer: ImageIcon,
     info: FileText,
     photos: ImageIcon,
+    "registration form": FileText,
     "": FileText,
 }
 

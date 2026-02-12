@@ -8,7 +8,7 @@ interface EventPhoto {
 interface EventDocument {
     id: string
     title: string
-    type: "premium-list" | "entry-form" | "results" | "flyer" | "info" | "photos" | ""
+    type: "premium-list" | "entry-form" | "results" | "flyer" | "info" | "photos" | "registration form" | ""
     url: string
     size?: string
 }
@@ -38,7 +38,6 @@ interface Event {
 }
 
 const events: Event[] = [
-    // Past Events
     {
         id: "1",
         title: "Obedience and Rally All Breed Specialty Trial Manchester CT",
@@ -1508,6 +1507,98 @@ Lynnie2974@msn.com</p>
                 alt: "awards2"
             },
         ]
+    },
+    // 2026 Events
+    {
+        id: "33",
+        title: "Seminar – Intro to Tracking",
+        date: "2026-04-26",
+        time: "9:00 AM",
+        location: "Stoney Hill Preserve, 275 Greenwood Ave, Bethel, CT 06801",
+        category: "seminar",
+        description: "Introductory tracking seminar for all levels.",
+        registrationRequired: true,
+        hasDocuments: true,
+        documents: [
+            {
+                id: "doc-1",
+                title: "Intro to Tracking",
+                type: "flyer",
+                url: "/events/33/P1 Intro to Tracking.pdf",
+            },
+            {
+                id: "doc-2",
+                title: "Reg Form Intro To Tracking",
+                type: "registration form",
+                url: "/events/33/Reg Form Intro to Tracking.pdf",
+            }
+        ],
+    },
+    {
+        id: "34",
+        title: "Spring Scent Work Trial",
+        date: "2026-05-30",
+        time: "All Day",
+        location: "Great Oak Middle School, Oxford, CT",
+        category: "trial",
+        description: "Spring Scent Work Trial (May 30–31, 2026).",
+        registrationRequired: true,
+        hasDocuments: false,
+    },
+    {
+        id: "35",
+        title: "Temperament Test / Annual Picnic",
+        date: "2026-06-14",
+        time: "All Day",
+        location: "Hop Brook Lake, Naugatuck, CT",
+        category: "test",
+        description: "Temperament Test, CGC, Trick Dog, Fit Dog, and Annual Picnic.",
+        registrationRequired: true,
+        hasDocuments: false,
+    },
+    {
+        id: "36",
+        title: "Obedience / Rally Trial",
+        date: "2026-07-19",
+        time: "All Day",
+        location: "Tails U Win, Manchester, CT",
+        category: "obedience",
+        description: "Obedience and Rally Trial.",
+        registrationRequired: true,
+        hasDocuments: false,
+    },
+    {
+        id: "37",
+        title: "Conformation Specialty Show",
+        date: "2026-10-10",
+        time: "All Day",
+        location: "Trumbull, CT",
+        category: "conformation",
+        description: "Conformation Specialty Show.",
+        registrationRequired: true,
+        hasDocuments: false,
+    },
+    {
+        id: "38",
+        title: "Fall Scent Work Trial",
+        date: "2026-10-10",
+        time: "All Day",
+        location: "NVCC – Waterbury, CT",
+        category: "trial",
+        description: "Fall Scent Work Trial (October 10–11, 2026).",
+        registrationRequired: true,
+        hasDocuments: false,
+    },
+    {
+        id: "39",
+        title: "Awards Dinner",
+        date: "2026-12-06",
+        time: "Evening",
+        location: "Location - TBD",
+        category: "other",
+        description: "Annual Awards Dinner.",
+        registrationRequired: false,
+        hasDocuments: false,
     },
 ]
 

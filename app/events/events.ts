@@ -1543,7 +1543,15 @@ Lynnie2974@msn.com</p>
         category: "trial",
         description: "Spring Scent Work Trial (May 30–31, 2026).",
         registrationRequired: true,
-        hasDocuments: false,
+        hasDocuments: true,
+        documents: [
+            {
+                id: "doc-1",
+                title: "Spring Scent Work Premium List",
+                type: "premium-list",
+                url: "/events/34/05-2026-Scent_Work_Premium_List_.pdf",
+            }
+        ],
     },
     {
         id: "35",

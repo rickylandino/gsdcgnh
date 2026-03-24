@@ -214,7 +214,7 @@ const events: Event[] = [
                 <p>Look for future AKC Fit Dog events</p>
         `,
         registrationRequired: false,
-        hasDocuments: true,
+        hasDocuments: false,
         photos: [
             {
                 id: "1",
@@ -231,20 +231,6 @@ const events: Event[] = [
                 src: "/events/4/resized.jpg",
                 alt: "3",
             },
-        ],
-        documents: [
-            {
-                id: "doc-2",
-                title: "AKC FIT DOG 5K.pdf",
-                type: "",
-                url: "/events/4/AKC FIT DOG 5K.pdf"
-            },
-            {
-                id: "doc-1",
-                title: "FIT DOG SPRING SCURRY REGISTRATION.pdf",
-                type: "",
-                url: "/events/4/FIT DOG SPRING SCURRY REGISTRATION.pdf"
-            }
         ],
     },
     {
@@ -1622,6 +1608,40 @@ Lynnie2974@msn.com</p>
         registrationRequired: false,
         hasDocuments: false,
     },
+    {
+        id: "40",
+        title: "Akc fit dog 5k spring scurry",
+        date: "2026-04-17",
+        time: "",
+        location: "",
+        category: "akcfitdog",
+        description:
+            "",
+        htmlDescription: ``,
+        registrationRequired: false,
+        hasDocuments: true,
+        photos: [
+            {
+                id: "1",
+                src: "/events/40/skurry.png",
+                alt: "1",
+            }
+        ],
+        documents: [
+            {
+                id: "doc-2",
+                title: "AKC FIT DOG 5K.pdf",
+                type: "",
+                url: "/events/40/AKC FIT DOG 5K.pdf"
+            },
+            {
+                id: "doc-1",
+                title: "FIT DOG SPRING SCURRY REGISTRATION.pdf",
+                type: "",
+                url: "/events/40/FIT DOG SPRING SCURRY REGISTRATION.pdf"
+            }
+        ],
+    }
 ]
 
 // ...existing code...

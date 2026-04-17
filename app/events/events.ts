@@ -1573,7 +1573,16 @@ Lynnie2974@msn.com</p>
         category: "obedience",
         description: "Obedience and Rally Trial.",
         registrationRequired: true,
-        hasDocuments: false,
+        hasDocuments: true,
+        documents: [
+            {
+                id: "doc-1",
+                title: "German Shepherd Premium List",
+                type: "premium-list",
+                url: "/events/36/2026 GSDCGNH Premium List- Obedience -Rally.pdf",
+                size: "3409 KB",
+            }
+        ]
     },
     {
         id: "37",

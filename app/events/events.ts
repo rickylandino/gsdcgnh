@@ -1562,7 +1562,23 @@ Lynnie2974@msn.com</p>
         category: "test",
         description: "Temperament Test, CGC, Trick Dog, Fit Dog, and Annual Picnic.",
         registrationRequired: true,
-        hasDocuments: false,
+        hasDocuments: true,
+        documents: [
+            {
+                id: "doc-1",
+                title: "2026 GSDCA TEMPERAMENT TEST AKC CGC Flyer",
+                type: "flyer",
+                url: "/events/35/2026-GSDCA TEMPERAMENT TEST-AKC CGC Flyer.pdf",
+                size: "148 KB",
+            },
+            {
+                id: "doc-2",
+                title: "2026 GSDCA TEMPERAMENT TEST CGC ENTRY FORM",
+                type: "registration form",
+                url: "/events/35/2026-GSDCA- TEMPERAMENT TEST -CGC ENTRY -FORM.pdf",
+                size: "154 KB",
+            }
+        ]
     },
     {
         id: "36",

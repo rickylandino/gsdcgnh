@@ -48,6 +48,14 @@ export default function BreedersPage() {
             details: ["Black/tan, Black/red & Sable Puppies Available"],
         },
         {
+            name: "PEAKES BROOK GERMAN SHEPHERDS",
+            location: "Delhi, NY",
+            email: "Peakesbrookgermanshepherds@gmail.com",
+            website: "https://peakesbrookshepherds.net",
+            details: ["AKC Breeder of Merit - Silver"],
+            phone: "607-746-8182",
+        },
+        {
             name: "RALLYNS GERMAN SHEPHERDS",
             location: "Trumbull, CT.",
             details: [],

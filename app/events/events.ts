@@ -1620,7 +1620,16 @@ Lynnie2974@msn.com</p>
         category: "trial",
         description: "Fall Scent Work Trial (October 10–11, 2026).",
         registrationRequired: true,
-        hasDocuments: false,
+        hasDocuments: true,
+        documents: [
+            {
+                id: "doc-1",
+                title: "Fall Scent Work Premium List",
+                type: "premium-list",
+                url: "/events/38/10-2026-Scent_Work_Premium_List.pdf",
+                size: "1151 KB",
+            }
+        ]
     },
     {
         id: "39",

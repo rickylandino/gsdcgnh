@@ -1552,6 +1552,9 @@ Lynnie2974@msn.com</p>
                 url: "/events/34/05-2026-Scent_Work_Premium_List_.pdf",
             }
         ],
+        galleryId: [
+            { id: "scent-trial-spring-2026", label: "Spring Scent Work Photos" }
+        ]
     },
     {
         id: "35",
@@ -1598,6 +1601,9 @@ Lynnie2974@msn.com</p>
                 url: "/events/36/2026 GSDCGNH Premium List- Obedience -Rally.pdf",
                 size: "3409 KB",
             }
+        ],
+        galleryId: [
+            { id: "obedience-rally-trial-summer-2026", label: "Obedience / Rally Trial Photos" }
         ]
     },
     {

@@ -1,5 +1,5 @@
 // Auto-generated file - do not edit manually
-// Generated on 2025-11-07T10:21:02.950Z
+// Generated on 2026-08-07T09:11:13.630Z
 
 export interface GalleryPhoto {
   src: string;
@@ -157,6 +157,90 @@ export const allPhotos: GalleryPhoto[] = [
     "category": "obedience"
   },
   {
+    "src": "/photo-gallery/obedience-rally-trial-summer-2026/_DSC5296.jpg",
+    "alt": " DSC5296",
+    "eventId": "obedience-rally-trial-summer-2026",
+    "eventTitle": "Obedience Rally Trial Summer 2026",
+    "category": "obedience"
+  },
+  {
+    "src": "/photo-gallery/obedience-rally-trial-summer-2026/_DSC5394.jpg",
+    "alt": " DSC5394",
+    "eventId": "obedience-rally-trial-summer-2026",
+    "eventTitle": "Obedience Rally Trial Summer 2026",
+    "category": "obedience"
+  },
+  {
+    "src": "/photo-gallery/obedience-rally-trial-summer-2026/_DSC5425.jpg",
+    "alt": " DSC5425",
+    "eventId": "obedience-rally-trial-summer-2026",
+    "eventTitle": "Obedience Rally Trial Summer 2026",
+    "category": "obedience"
+  },
+  {
+    "src": "/photo-gallery/obedience-rally-trial-summer-2026/_DSC5567.jpg",
+    "alt": " DSC5567",
+    "eventId": "obedience-rally-trial-summer-2026",
+    "eventTitle": "Obedience Rally Trial Summer 2026",
+    "category": "obedience"
+  },
+  {
+    "src": "/photo-gallery/obedience-rally-trial-summer-2026/_DSC5569.jpg",
+    "alt": " DSC5569",
+    "eventId": "obedience-rally-trial-summer-2026",
+    "eventTitle": "Obedience Rally Trial Summer 2026",
+    "category": "obedience"
+  },
+  {
+    "src": "/photo-gallery/obedience-rally-trial-summer-2026/_DSC5667-2.jpg",
+    "alt": " DSC5667 2",
+    "eventId": "obedience-rally-trial-summer-2026",
+    "eventTitle": "Obedience Rally Trial Summer 2026",
+    "category": "obedience"
+  },
+  {
+    "src": "/photo-gallery/obedience-rally-trial-summer-2026/_DSC5775-2.jpg",
+    "alt": " DSC5775 2",
+    "eventId": "obedience-rally-trial-summer-2026",
+    "eventTitle": "Obedience Rally Trial Summer 2026",
+    "category": "obedience"
+  },
+  {
+    "src": "/photo-gallery/obedience-rally-trial-summer-2026/_DSC5867-2.jpg",
+    "alt": " DSC5867 2",
+    "eventId": "obedience-rally-trial-summer-2026",
+    "eventTitle": "Obedience Rally Trial Summer 2026",
+    "category": "obedience"
+  },
+  {
+    "src": "/photo-gallery/obedience-rally-trial-summer-2026/_DSC6045-2.jpg",
+    "alt": " DSC6045 2",
+    "eventId": "obedience-rally-trial-summer-2026",
+    "eventTitle": "Obedience Rally Trial Summer 2026",
+    "category": "obedience"
+  },
+  {
+    "src": "/photo-gallery/obedience-rally-trial-summer-2026/_DSC6075-2.jpg",
+    "alt": " DSC6075 2",
+    "eventId": "obedience-rally-trial-summer-2026",
+    "eventTitle": "Obedience Rally Trial Summer 2026",
+    "category": "obedience"
+  },
+  {
+    "src": "/photo-gallery/obedience-rally-trial-summer-2026/_DSC6162-2.jpg",
+    "alt": " DSC6162 2",
+    "eventId": "obedience-rally-trial-summer-2026",
+    "eventTitle": "Obedience Rally Trial Summer 2026",
+    "category": "obedience"
+  },
+  {
+    "src": "/photo-gallery/obedience-rally-trial-summer-2026/_DSC6324-2.jpg",
+    "alt": " DSC6324 2",
+    "eventId": "obedience-rally-trial-summer-2026",
+    "eventTitle": "Obedience Rally Trial Summer 2026",
+    "category": "obedience"
+  },
+  {
     "src": "/photo-gallery/october-2025-scent-work/IMG_3605.JPG",
     "alt": "IMG 3605",
     "eventId": "october-2025-scent-work",
@@ -224,6 +308,132 @@ export const allPhotos: GalleryPhoto[] = [
     "alt": " DSC9228 2",
     "eventId": "october-2025-scent-work",
     "eventTitle": "October 2025 Scent Work",
+    "category": "trial"
+  },
+  {
+    "src": "/photo-gallery/scent-trial-spring-2026/_DSC3299.jpg",
+    "alt": " DSC3299",
+    "eventId": "scent-trial-spring-2026",
+    "eventTitle": "Scent Trial Spring 2026",
+    "category": "trial"
+  },
+  {
+    "src": "/photo-gallery/scent-trial-spring-2026/_DSC3519-2.jpg",
+    "alt": " DSC3519 2",
+    "eventId": "scent-trial-spring-2026",
+    "eventTitle": "Scent Trial Spring 2026",
+    "category": "trial"
+  },
+  {
+    "src": "/photo-gallery/scent-trial-spring-2026/_DSC3545.jpg",
+    "alt": " DSC3545",
+    "eventId": "scent-trial-spring-2026",
+    "eventTitle": "Scent Trial Spring 2026",
+    "category": "trial"
+  },
+  {
+    "src": "/photo-gallery/scent-trial-spring-2026/_DSC3669-2.jpg",
+    "alt": " DSC3669 2",
+    "eventId": "scent-trial-spring-2026",
+    "eventTitle": "Scent Trial Spring 2026",
+    "category": "trial"
+  },
+  {
+    "src": "/photo-gallery/scent-trial-spring-2026/_DSC3715.jpg",
+    "alt": " DSC3715",
+    "eventId": "scent-trial-spring-2026",
+    "eventTitle": "Scent Trial Spring 2026",
+    "category": "trial"
+  },
+  {
+    "src": "/photo-gallery/scent-trial-spring-2026/_DSC4018.jpg",
+    "alt": " DSC4018",
+    "eventId": "scent-trial-spring-2026",
+    "eventTitle": "Scent Trial Spring 2026",
+    "category": "trial"
+  },
+  {
+    "src": "/photo-gallery/scent-trial-spring-2026/_DSC4027.jpg",
+    "alt": " DSC4027",
+    "eventId": "scent-trial-spring-2026",
+    "eventTitle": "Scent Trial Spring 2026",
+    "category": "trial"
+  },
+  {
+    "src": "/photo-gallery/scent-trial-spring-2026/_DSC4031-3.jpg",
+    "alt": " DSC4031 3",
+    "eventId": "scent-trial-spring-2026",
+    "eventTitle": "Scent Trial Spring 2026",
+    "category": "trial"
+  },
+  {
+    "src": "/photo-gallery/scent-trial-spring-2026/_DSC6488-2.jpg",
+    "alt": " DSC6488 2",
+    "eventId": "scent-trial-spring-2026",
+    "eventTitle": "Scent Trial Spring 2026",
+    "category": "trial"
+  },
+  {
+    "src": "/photo-gallery/scent-trial-spring-2026/_DSC6559.jpg",
+    "alt": " DSC6559",
+    "eventId": "scent-trial-spring-2026",
+    "eventTitle": "Scent Trial Spring 2026",
+    "category": "trial"
+  },
+  {
+    "src": "/photo-gallery/scent-trial-spring-2026/_DSC6766-2.jpg",
+    "alt": " DSC6766 2",
+    "eventId": "scent-trial-spring-2026",
+    "eventTitle": "Scent Trial Spring 2026",
+    "category": "trial"
+  },
+  {
+    "src": "/photo-gallery/scent-trial-spring-2026/_DSC6818-2.jpg",
+    "alt": " DSC6818 2",
+    "eventId": "scent-trial-spring-2026",
+    "eventTitle": "Scent Trial Spring 2026",
+    "category": "trial"
+  },
+  {
+    "src": "/photo-gallery/scent-trial-spring-2026/_DSC8029-2.jpg",
+    "alt": " DSC8029 2",
+    "eventId": "scent-trial-spring-2026",
+    "eventTitle": "Scent Trial Spring 2026",
+    "category": "trial"
+  },
+  {
+    "src": "/photo-gallery/scent-trial-spring-2026/_DSC8167-3.jpg",
+    "alt": " DSC8167 3",
+    "eventId": "scent-trial-spring-2026",
+    "eventTitle": "Scent Trial Spring 2026",
+    "category": "trial"
+  },
+  {
+    "src": "/photo-gallery/scent-trial-spring-2026/_DSC8189-3.jpg",
+    "alt": " DSC8189 3",
+    "eventId": "scent-trial-spring-2026",
+    "eventTitle": "Scent Trial Spring 2026",
+    "category": "trial"
+  },
+  {
+    "src": "/photo-gallery/scent-trial-spring-2026/_DSC8272-3.jpg",
+    "alt": " DSC8272 3",
+    "eventId": "scent-trial-spring-2026",
+    "eventTitle": "Scent Trial Spring 2026",
+    "category": "trial"
+  },
+  {
+    "src": "/photo-gallery/scent-trial-spring-2026/_DSC8558-2.jpg",
+    "alt": " DSC8558 2",
+    "eventId": "scent-trial-spring-2026",
+    "eventTitle": "Scent Trial Spring 2026",
+    "category": "trial"
+  },
+  {
+    "src": "/photo-gallery/scent-trial-spring-2026/_DSC8596-2.jpg",
+    "alt": " DSC8596 2",
+    "eventId": "scent-trial-spring-2026",
+    "eventTitle": "Scent Trial Spring 2026",
     "category": "trial"
   }
 ];

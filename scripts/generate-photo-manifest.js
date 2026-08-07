@@ -20,6 +20,16 @@ const PHOTOGRAPHER_LINKS = {
     "photographerName": "Kelly Iannello Photography",
     "url": "https://kellyiannellophotography.pixieset.com/gsdcgnhakcscenttrialgeneralgallery/",
     "description": "October 2025 Scent Work"
+  },
+  "scent-trial-spring-2026": {
+    "photographerName": "Kelly Iannello Photography",
+    "url": "https://kellyiannellophotography.pixieset.com/gsdcgnhscentandtrackingwebsitepics/",
+    "description": "Spring Scent Work Trial"
+  },
+  "obedience-rally-trial-summer-2026": {
+    "photographerName": "Kelly Iannello Photography",
+    "url": "https://kellyiannellophotography.pixieset.com/gsdcgnhobandrallywesbitepics/",
+    "description": "Obedience / Rally Trial"
   }
 };
 

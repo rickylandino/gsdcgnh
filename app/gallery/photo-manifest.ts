@@ -1,5 +1,5 @@
 // Auto-generated file - do not edit manually
-// Generated on 2026-08-07T09:11:13.630Z
+// Generated on 2026-08-07T09:14:22.364Z
 
 export interface GalleryPhoto {
   src: string;
@@ -453,5 +453,15 @@ export const photographerLinks: Record<string, PhotographerLink> = {
     "photographerName": "Kelly Iannello Photography",
     "url": "https://kellyiannellophotography.pixieset.com/gsdcgnhakcscenttrialgeneralgallery/",
     "description": "October 2025 Scent Work"
+  },
+  "scent-trial-spring-2026": {
+    "photographerName": "Kelly Iannello Photography",
+    "url": "https://kellyiannellophotography.pixieset.com/gsdcgnhscentandtrackingwebsitepics/",
+    "description": "Spring Scent Work Trial"
+  },
+  "obedience-rally-trial-summer-2026": {
+    "photographerName": "Kelly Iannello Photography",
+    "url": "https://kellyiannellophotography.pixieset.com/gsdcgnhobandrallywesbitepics/",
+    "description": "Obedience / Rally Trial"
   }
 };

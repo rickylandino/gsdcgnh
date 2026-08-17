@@ -1619,7 +1619,7 @@ Lynnie2974@msn.com</p>
         documents: [
             {
                 id: "doc-1",
-                title: "Fall Scent Work Premium List",
+                title: "Oct Conformation Shows Premium List",
                 type: "premium-list",
                 url: "/events/37/2026_conformation_premium_list_october.pdf",
                 size: "563 KB",

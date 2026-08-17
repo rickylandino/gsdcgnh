@@ -1615,7 +1615,16 @@ Lynnie2974@msn.com</p>
         category: "conformation",
         description: "Conformation Specialty Show.",
         registrationRequired: true,
-        hasDocuments: false,
+        hasDocuments: true,
+        documents: [
+            {
+                id: "doc-1",
+                title: "Fall Scent Work Premium List",
+                type: "premium-list",
+                url: "/events/37/2026_conformation_premium_list_october.pdf",
+                size: "563 KB",
+            }
+        ]
     },
     {
         id: "38",

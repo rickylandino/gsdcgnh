@@ -5,7 +5,7 @@ import Link from "next/link"
 import Image from "next/image"
 import { Button } from "@/components/ui/button"
 import { Menu, X } from "lucide-react"
-import { navigation } from "@/lib/navigation"
+import { navigation, externalLinkProps } from "@/lib/navigation"
 
 export default function Header() {
     const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -43,7 +43,7 @@ export default function Header() {
                     <nav className="hidden lg:flex items-center space-x-8">
                         {navigation.map((item) => (
                             <div key={item.name} className="relative group">
-                                <Link href={item.href} className="text-chrome-200 hover:text-white transition-colors duration-200 font-medium">
+                                <Link href={item.href} {...externalLinkProps(item)} className="text-chrome-200 hover:text-white transition-colors duration-200 font-medium">
                                     {item.name}
                                 </Link>
                             </div>
@@ -64,6 +64,7 @@ export default function Header() {
                                 <div key={item.name}>
                                     <Link
                                         href={item.href}
+                                        {...externalLinkProps(item)}
                                         className="text-chrome-200 hover:text-white transition-colors duration-200 font-medium"
                                         onClick={() => setIsMenuOpen(false)}
                                     >

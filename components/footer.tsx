@@ -1,6 +1,6 @@
 import Link from "next/link"
 import Image from "next/image"
-import { navigation } from "@/lib/navigation"
+import { navigation, externalLinkProps } from "@/lib/navigation"
 
 export default function Footer() {
   return (
@@ -27,7 +27,7 @@ export default function Footer() {
             <ul className="space-y-2 text-sm">
                 {navigation.map((item) => (
               <li key={item.name}>
-                <Link href={item.href} className="text-gray-300 hover:text-white transition-colors">
+                <Link href={item.href} {...externalLinkProps(item)} className="text-gray-300 hover:text-white transition-colors">
                   {item.name}
                 </Link>
               </li>
